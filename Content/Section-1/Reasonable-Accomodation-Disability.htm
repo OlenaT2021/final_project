@@ -1,10 +1,186 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
     </head>
     <body>
-        <h1>Reasonable Accommodation of Disability</h1>
-        <p><MadCap:variable name="General.CompanyName" /> does not discriminate against any applicant or employee in hiring or in the terms, conditions, and privileges of employment due to physical or mental disability. When <MadCap:variable name="General.CompanyName" /> becomes aware of any disability that prevents an otherwise qualified applicant or employee from performing a job, the company will assess whether any reasonable accommodation would allow the person to perform the job before refusing employment or making a distinction in terms, conditions, or privileges of employment because of the disability. An accommodation that creates an undue hardship on the company or which endangers health or safety is not a reasonable accommodation. The company will make any reasonable accommodation necessary to allow an otherwise qualified applicant or employee to perform the job.</p>
-        <p>An otherwise qualified applicant for employment or an employee with a disability who requires reasonable accommodation may inform his or her manager of the nature of the disability and the accommodation required. Employees with access to such information shall maintain the confidentiality of the information to the extent reasonably possible and shall not release the information to anyone who does not have the right or need to know.</p>
+        <h1>Content quality assurance before localization</h1>
+        <p>Preparing software documentation for internationalization and localization requires foresight and precision to guarantee its success in a global market. One of the most essential conditions for it is to perform quality assurance testing (QA), which indicates that the content is prepared for localization.</p>
+        <p>The validating process ensures the document is structured, written, and technically prepared to support translation into multiple languages without issues. The goal is to confirm that the content is internationalization (i18n)-ready, meaning it can be seamlessly adapted for different regions and cultures.</p>
+        <p>Below are the main steps to validate the content readiness before handing it off for localization.</p>
+        <ul>
+            <li>
+                <p><b>Check language clarity and neutrality</b>
+                </p>
+                <ul style="list-style-type: circle;">
+                    <li>
+                        <p>Review the text to ensure it uses simple, clear language free of idioms, slang, or culture-specific references (for example, replace "home run" with "success").</p>
+                    </li>
+                    <li>
+                        <p>Confirm consistent terminology (for example, "save" is not used interchangeably with "store") to avoid confusion during translation.</p>
+                    </li>
+                    <li>
+                        <p>Verify that examples (for example, names, dates) are generic or include notes for localization (for example, "replace 'John Doe' with a local name").</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><b>Ensure text is externalized and structured</b>
+                </p>
+                <ul style="list-style-type: circle;">
+                    <li>
+                        <p>Check that all translatable content (for example, headings, instructions, error messages) is separated from code or formatting (for example, stored in resource files like .json).</p>
+                    </li>
+                    <li>
+                        <p>Avoid concatenated strings (for example, "Page" + " " + "1"); use placeholders instead (for example, "Page {0}").</p>
+                    </li>
+                    <li>
+                        <p>Confirm that no text is embedded in images or hardcoded in the documentation layout.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><b>Test for text expansion and formatting</b>
+                </p>
+                <ul style="list-style-type: circle;">
+                    <li>
+                        <p>Simulate text expansion by increasing string length by 20-30% (for example, "Click here" becomes "Click here now please") to ensure layouts do not break.</p>
+                    </li>
+                    <li>
+                        <p>Verify that the documentation supports Unicode (UTF-8) encoding for all character sets (for example, Latin, Arabic, Chinese).</p>
+                    </li>
+                    <li>
+                        <p>Check that fonts can render special characters and scripts without issues (for example, no boxes or garbled text).</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><b>Validate flexibility for regional variations</b>
+                </p>
+                <ul style="list-style-type: circle;">
+                    <li>
+                        <p>Ensure date, time, and number formats are documented as adjustable (for example, "use [DD-MM-YYYY] or locale equivalent").</p>
+                    </li>
+                    <li>
+                        <p>Confirm placeholders exist for dynamic data (for example, {currency} {amount} instead of "$10") to support local currencies.</p>
+                    </li>
+                    <li>
+                        <p>Test that pluralization is handled correctly (for example, "1 file" or "2 files") with notes for languages with complex rules (for example, Arabic).</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><b>Assess visual and layout compatibility</b>
+                </p>
+                <ul style="list-style-type: circle;">
+                    <li>
+                        <p>Verify that layouts (for example, tables, bullet lists) can accommodate longer or shorter translated text without truncation or overlap.</p>
+                    </li>
+                    <li>
+                        <p>Check that the text in diagrams or screenshots is separate (for example, captions, not embedded) and marked for translation.</p>
+                    </li>
+                    <li>
+                        <p>Test RTL (right-to-left) readiness by flipping text direction to ensure alignment and flow remain intact.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><b>Provide context for translators</b>
+                </p>
+                <ul style="list-style-type: circle;">
+                    <li>
+                        <p>Include a glossary of key terms with definitions (for example, "upload: to send a file to a server") for consistency.</p>
+                    </li>
+                    <li>
+                        <p>Add notes or comments explaining ambiguous phrases or UI references (for example, "’submit’ refers to a button label").</p>
+                    </li>
+                    <li>
+                        <p>Ensure each section has enough context, so translators understand its purpose without guessing.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><b>Perform a pseudo-localization test</b>
+                </p>
+                <ul style="list-style-type: circle;">
+                    <li>
+                        <p>Replace text with pseudo-translated strings (for example, "Hëłłô Wørłd" with accents and extra length) to imitate real translations.</p>
+                    </li>
+                    <li>
+                        <p>Check for layout issues, missing strings, or encoding errors in the documentation.</p>
+                    </li>
+                    <li>
+                        <p>Validate that all translatable elements are properly flagged and nothing is overlooked.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><b>Review technical accuracy</b>
+                </p>
+                <ul style="list-style-type: circle;">
+                    <li>
+                        <p>Cross-check the documentation against the software to ensure instructions match the actual interface and functionality.</p>
+                    </li>
+                    <li>
+                        <p>Verify that UI terms (for example, button labels, menu names) are consistent between the software and documentation.</p>
+                    </li>
+                    <li>
+                        <p>Test that documented features work across different locale settings (for example, changing language in the app).</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><b>Confirm cultural neutrality</b>
+                </p>
+                <ul style="list-style-type: circle;">
+                    <li>
+                        <p>Ensure content avoids region-specific assumptions (for example, "call during business hours" specifies a time zone or is adjustable).</p>
+                    </li>
+                    <li>
+                        <p>Check that symbols or examples (for example, a checkmark for "done") are universally understood or replaceable.</p>
+                    </li>
+                    <li>
+                        <p>Remove or flag any humour or references that may not translate well.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><b>Prepare supporting materials</b>
+                </p>
+                <ul style="list-style-type: circle;">
+                    <li>
+                        <p>Compile a style guide (for example, tone, punctuation rules) to guide translators.</p>
+                    </li>
+                    <li>
+                        <p>Provide access to the software UI or screenshots, so translators can see the content in context.</p>
+                    </li>
+                    <li>
+                        <p>Set up a process for translators to ask questions if something is unclear.</p>
+                    </li>
+                    <li>
+                        <p>Once these steps are complete, the documentation should be fully prepared for localization, minimizing rework or errors during translation.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>Below is the short checklist to be used during the validation process.</p>
+        <h3>Final validation checklist</h3>
+        <p><span style="font-family: 'Arial Unicode MS'">☐</span>All text is clear, neutral, and free of cultural bias.</p>
+        <p><span style="font-family: 'Arial Unicode MS'">☐</span>Strings are externalized and use placeholders where needed.</p>
+        <p><span style="font-family: 'Arial Unicode MS'">☐</span>Layouts handle expansion and RTL text without issues.</p>
+        <p><span style="font-family: 'Arial Unicode MS'">☐</span>Unicode and fonts support all target languages.</p>
+        <p><span style="font-family: 'Arial Unicode MS'">☐</span>Context, glossary, and style guide are included.</p>
+        <p><span style="font-family: 'Arial Unicode MS'">☐</span>Pseudo-localization reveals no technical or display problems.</p>
     </body>
 </html>
