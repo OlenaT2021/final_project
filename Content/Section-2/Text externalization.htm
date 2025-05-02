@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>General externalization</title>
+        <meta name="template" content="Flare.htt" />
+    </head>
+    <body>
+        <h1>Text externalization</h1>
+        <p><b>Text externalization</b> is a fundamental practice in preparing content for localization, aiming to streamline the translation process and ensure consistency across different languages and regions. It involves separating textual content from the underlying code or design, allowing translators to work efficiently without the need for technical expertise.</p>
+        <h3>Key aspects of text externalization</h3>
+        <ul>
+            <li>
+                <p><b>Separation of text from code.</b> Extracting all translatable text (for example, labels or instructions) into external resource files (like .resx or .po) is critical because it isolates content from the software’s logic. This allows translators to work on the text without needing to modify or understand the codebase, simplifying i18n.</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><b>Consistent string identifiers.</b> Assign unique and descriptive identifiers to each text string. Consistent naming conventions aid in maintaining clarity and organization across different languages and versions. ​</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><b>Avoidance of hard-coding text.</b> Refrain from embedding text directly into the codebase. Hard-coded strings complicate the localization process and increase the risk of errors during translation. ​</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><b>Support for multiple languages.</b> Design the system to accommodate multiple languages by creating separate resource files for each language. This structure facilitates easy switching and the addition of new languages. ​</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><b>Contextual clarity.</b> Provide context for each translatable string, such as comments or notes within resource files, to assist translators in understanding the intended meaning and usage. ​</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><b>Regular maintenance and updates.</b> Keep resource files up to date with the latest text changes and ensure that all translations are synchronized with the current version of the application or document.</p>
+            </li>
+        </ul>
+        <h3>Best practices of text externalization</h3>
+        <ul>
+            <li>
+                <p><b>Using resource files. </b>Implement resource files (for example, .resx for .NET, .properties for Java, .json or .xml for web applications) to manage translatable strings. These files serve as centralized repositories for all text elements.</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><b>Providing context for translators.</b> Include comments or metadata with each string (for example, "Used in error dialogue when password is too short") because translators need to know the context to produce accurate, context-appropriate translations. This minimizes misinterpretations and rework in l10n.</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><b>Avoiding string concatenation.</b> Refrain from constructing sentences by concatenating multiple strings at runtime. Different languages have varying grammatical structures, and concatenation can lead to incorrect or awkward translations. ​</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><b>Planning for text expansion</b>. Plan for text length variations (for example, English to German can expand by 30%, while Japanese may contract) by avoiding fixed-width fields or layouts. This prevents UI or document formatting issues when localized text is integrated.</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><b>Implementing Unicode support. </b>Use Unicode (UTF-8) for all text handling because it supports virtually all character sets and scripts globally. Implementing this from the outset avoids encoding conflicts and ensures smooth rendering in any language during localization.</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><b>Automating localization workflows.</b> Implement tools and processes that automate the extraction of text for translation and the integration of localized content. Automation reduces manual errors and accelerates the localization process.</p>
+            </li>
+        </ul>
+    </body>
+</html>
