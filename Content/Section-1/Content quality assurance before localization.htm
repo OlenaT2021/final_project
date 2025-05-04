@@ -5,7 +5,7 @@
     <body>
         <h1>Content quality assurance before localization</h1>
         <p>Preparing software documentation for internationalization and localization requires foresight and precision to guarantee its success in a global market. One of the most essential conditions for it is to perform quality assurance testing (QA), which indicates that the content is prepared for localization.</p>
-        <p>The validating process ensures the document is structured, written, and technically prepared to support translation into multiple languages without issues. The goal is to confirm that the content is internationalization (i18n)-ready, meaning it can be seamlessly adapted for different regions and cultures.</p>
+        <p>The validating process ensures the document is structured, written, and technically prepared to support translation into multiple languages without issues. The goal is to confirm that the content is internationalization-ready, meaning it can be seamlessly adapted for different regions and cultures.</p>
         <p>Below are the main steps to validate the content readiness before handing it off for localization.</p>
         <ul>
             <li>
@@ -30,10 +30,10 @@
                 </p>
                 <ul style="list-style-type: circle;">
                     <li>
-                        <p>Check that all translatable content (for example, headings, instructions, error messages) is separated from code or formatting (for example, stored in resource files like .json).</p>
+                        <p>Check that all translatable content (for example, headings, instructions, error messages) is separated from code or formatting (for example, stored in resource files like<code> .json</code>).</p>
                     </li>
                     <li>
-                        <p>Avoid concatenated strings (for example, "Page" + " " + "1"); use placeholders instead (for example, "Page {0}").</p>
+                        <p>Avoid concatenated strings (for example, "Page" + " " + "1"); use placeholders instead (for example, <code>"Page {0}"</code>).</p>
                     </li>
                     <li>
                         <p>Confirm that no text is embedded in images or hardcoded in the documentation layout.</p>
@@ -67,7 +67,7 @@
                         <p>Ensure date, time, and number formats are documented as adjustable (for example, "use [DD-MM-YYYY] or locale equivalent").</p>
                     </li>
                     <li>
-                        <p>Confirm placeholders exist for dynamic data (for example, {currency} {amount} instead of "$10") to support local currencies.</p>
+                        <p>Confirm placeholders exist for dynamic data (for example,<code> {currency} {amount}</code> instead of "$10") to support local currencies.</p>
                     </li>
                     <li>
                         <p>Test that pluralization is handled correctly (for example, "1 file" or "2 files") with notes for languages with complex rules (for example, Arabic).</p>
@@ -87,7 +87,7 @@
                         <p>Check that the text in diagrams or screenshots is separate (for example, captions, not embedded) and marked for translation.</p>
                     </li>
                     <li>
-                        <p>Test RTL (right-to-left) readiness by flipping text direction to ensure alignment and flow remain intact.</p>
+                        <p>Test right-to-left (RTL) readiness by flipping text direction to ensure alignment and flow remain intact.</p>
                     </li>
                 </ul>
             </li>
@@ -168,19 +168,21 @@
                     <li>
                         <p>Set up a process for translators to ask questions if something is unclear.</p>
                     </li>
-                    <li>
-                        <p>Once these steps are complete, the documentation should be fully prepared for localization, minimizing rework or errors during translation.</p>
-                    </li>
                 </ul>
             </li>
         </ul>
+        <p>Once these steps are complete, the documentation should be fully prepared for localization, minimizing rework or errors during translation.</p>
+        <p>The vivid example of poorly localized content is <b>Pepsi's Slogan in Chin</b>a.</p>
+        <p>In the 1960s, Pepsi's slogan <cite>"Come alive! You're in the Pepsi generation"</cite> was translated for the Chinese market. However, the translation was interpreted as "Pepsi brings your ancestors back from the grave". This misinterpretation stemmed from a literal translation that didn't consider cultural nuances and idiomatic expressions in Chinese. The result was confusion and a negative reception among Chinese consumers, illustrating the pitfalls of inadequate localization.</p>
+        <p>And the prime example of succesful localization is <b>Coca-Cola's "Share a Coke"</b> marketing campaign.</p>
+        <p>The campaign involved printing popular names on Coke bottles, encouraging consumers to find bottles with their own or friends' names. In Ireland, Coca-Cola used common Irish names like "Aoife" and "Oisín" to resonate with local consumers. In China, where using first names can be considered too informal, Coca-Cola replaced names with terms like "classmate" and "close friend" to align with cultural norms. This thoughtful adaptation led to increased consumer engagement and sales across diverse markets.</p>
         <p>Below is the short checklist to be used during the validation process.</p>
         <h3>Final validation checklist</h3>
-        <p><span style="font-family: 'Arial Unicode MS'">☐</span>All text is clear, neutral, and free of cultural bias.</p>
-        <p><span style="font-family: 'Arial Unicode MS'">☐</span>Strings are externalized and use placeholders where needed.</p>
-        <p><span style="font-family: 'Arial Unicode MS'">☐</span>Layouts handle expansion and RTL text without issues.</p>
-        <p><span style="font-family: 'Arial Unicode MS'">☐</span>Unicode and fonts support all target languages.</p>
-        <p><span style="font-family: 'Arial Unicode MS'">☐</span>Context, glossary, and style guide are included.</p>
-        <p><span style="font-family: 'Arial Unicode MS'">☐</span>Pseudo-localization reveals no technical or display problems.</p>
+        <p><span style="font-family: 'Arial Unicode MS'">☐</span> All text is clear, neutral, and free of cultural bias.</p>
+        <p><span style="font-family: 'Arial Unicode MS'">☐</span> Strings are externalized and use placeholders where needed.</p>
+        <p><span style="font-family: 'Arial Unicode MS'">☐</span> Layouts handle expansion and RTL text without issues.</p>
+        <p><span style="font-family: 'Arial Unicode MS'">☐</span> Unicode and fonts support all target languages.</p>
+        <p><span style="font-family: 'Arial Unicode MS'">☐</span> Context, glossary, and style guide are included.</p>
+        <p><span style="font-family: 'Arial Unicode MS'">☐</span> Pseudo-localization reveals no technical or display problems.</p>
     </body>
 </html>

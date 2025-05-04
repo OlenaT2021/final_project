@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultVariableSet>
   <Variable
     Comment=""
     Name="CompanyName"
-    EvaluatedDefinition="FictionSoft">FictionSoft</Variable>
+    EvaluatedDefinition="Logo Docs">Logo Docs</Variable>
   <Variable
     Comment=""
     Name="PhoneNumber">858 123 4567</Variable>
   <Variable
     Name="Email"
     Comment=""
-    EvaluatedDefinition="info@fictionsoft.com">info@fictionsoft.com</Variable>
+    EvaluatedDefinition="info@logodocs.com">info@logodocs.com</Variable>
   <Variable
     Name="StreetAddress"
     Comment=""
-    EvaluatedDefinition="1234 Lorem Ipsum Ave.">1234 Lorem Ipsum Ave.</Variable>
+    EvaluatedDefinition="1234 Bright Ave.">1234 Bright Ave.</Variable>
   <Variable
     Name="CityStateZip"
     Comment=""
-    EvaluatedDefinition="La Jolla, CA 92037">La Jolla, CA 92037</Variable>
+    EvaluatedDefinition="La Jolla, UA 10201">La Jolla, UA 10201</Variable>
 </CatapultVariableSet>
