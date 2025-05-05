@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Code and Markup language</title>
+        <link href="../Resources/TableStylesheets/Color-with-Subsections.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Code and Markup language</h1>
+        <p>When preparing documentation for localization, it's essential to understand the format-specific aspects of both code and markup languages. Each format has its own structure, syntax, and rendering rules, which can affect how content is extracted, translated, and reintegrated. That’s why it is necessary to remember the key differences to ensure clean, consistent, and localization-friendly documentation.</p>
+        <h3>Key aspects of code and markup language</h3>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStylesheets/Color-with-Subsections.css');border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 0px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #000000;" class="TableStyle-Color-with-Subsections" cellspacing="21">
+            <col class="TableStyle-Color-with-Subsections-Column-Column1" style="width: 282px;" />
+            <col class="TableStyle-Color-with-Subsections-Column-Column1" style="width: 398px;" />
+            <col class="TableStyle-Color-with-Subsections-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Color-with-Subsections-Head-Header1">
+                    <th class="TableStyle-Color-with-Subsections-HeadE-Column1-Header1">Aspect
+
+</th>
+                    <th class="TableStyle-Color-with-Subsections-HeadE-Column1-Header1">Code (programming languages)
+</th>
+                    <th class="TableStyle-Color-with-Subsections-HeadD-Column1-Header1">
+Markup languages</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
+                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel"><b>Syntax and structure
+</b><![CDATA[
+]]></td>
+                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Strict rules (for example, semicolons in C++, indentation in Python); loops, conditionals, functions.
+
+</td>
+                    <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">Tag-based (for example, <code>&lt;p&gt;</code> in HTML, <code>&lt;item&gt;</code> in XML) or lightweight (for example, <code>#</code> in Markdown); hierarchical.</td>
+                </tr>
+                <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
+                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel"><b>Semantics</b><![CDATA[
+]]></td>
+                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">
+Drives functionality (for example, calculations, try-catch for errors).
+
+</td>
+                    <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">Describes content structure/presentation (for example, <code>&lt;h1&gt;</code> for headings); declarative.</td>
+                </tr>
+                <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
+                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel"><b>Comments
+</b>
+                    </td>
+                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">
+Documentation (for example, <cite>//</cite> in C++, <cite>#</cite> in Python) for readability.
+
+</td>
+                    <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">Notes (for example, <code>&lt;!-- --&gt;</code> in HTML) for clarity; ignored by parsers.</td>
+                </tr>
+                <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
+                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel"><b>Attributes
+</b><![CDATA[
+]]></td>
+                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">N/A (uses variables, function parameters).
+</td>
+                    <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">
+Tags include metadata (for example, <code>class="container"</code> in HTML).</td>
+                </tr>
+                <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
+                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel"><b>Formatting conventions</b><![CDATA[
+
+]]></td>
+                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Consistent indentation, naming (for example, camelCase in Java, snake_case in Python).</td>
+                    <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">
+
+Indentation for readability; consistent tag usage (for example, closing tags in XML).</td>
+                </tr>
+                <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
+                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel"><b>Execution/rendering
+</b><![CDATA[
+]]></td>
+                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Compiled/interpreted in runtime environments (for example, Node.js for JavaScript).
+
+</td>
+                    <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">Processed by browsers (HTML), parsers (XML), or converters (Markdown to HTML).</td>
+                </tr>
+                <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
+                    <td class="TableStyle-Color-with-Subsections-BodyB-Column1-SecondLevel"><b>Extensibility</b>
+                    </td>
+                    <td class="TableStyle-Color-with-Subsections-BodyB-Column1-SecondLevel">Modular via functions, classes, libraries (for example, <code>import numpy</code>).
+
+</td>
+                    <td class="TableStyle-Color-with-Subsections-BodyA-Column1-SecondLevel">Custom tags in XML; predefined in HTML; limited in Markdown.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Best practices shared with code and Markup language</h3>
+        <ul>
+            <li>
+                <p><b>Readability.</b> Prioritize clear, consistent formatting to make code/markup easy to understand and maintain.</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><b>Version control.</b> Use systems like Git to track changes, especially for collaborative projects.</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><b>Automated checks.</b> Integrate linters, formatters, and validators into workflows (for example, CI/CD pipelines) to catch issues early.</p>
+            </li>
+            <li>
+                <p><b>Accessibility/standards compliance.</b> Ensure code adheres to language-specific standards (for example, ECMAScript for JavaScript, HTML5 for web) and markup supports accessibility (for example, ARIA attributes in HTML).</p>
+            </li>
+        </ul>
+    </body>
+</html>

@@ -559,6 +559,15 @@ p.footer-sub
 	margin-top: 14px;
 }
 
+MadCap|codeSnippet
+{
+	padding: 1em;
+	padding-bottom: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 1em;
+}
+
 @media tablet
 {
 	/* Home page topic */

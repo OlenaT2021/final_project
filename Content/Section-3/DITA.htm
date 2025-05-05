@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>DITA</title>
+    </head>
+    <body>
+        <h1>DITA</h1>
+        <p>The <b>Darwin Information Typing Architecture</b> (DITA) is an XML-based standard for creating modular, reusable content adaptable to various output formats. This section examines three key areas:</p>
+        <ul>
+            <li>
+                <p><a href="#Text">text externalization</a> (it enables efficient reuse and localization),</p>
+            </li>
+            <li>
+                <p><a href="#Text2">text layout and formatting</a> (it relies on semantic markup for consistent, style-agnostic outputs),</p>
+            </li>
+            <li>
+                <p><a href="#Code">code and Markup language</a> (ensure technical content, like snippets and commands).</p>
+            </li>
+        </ul>
+        <p>At the end of the chapter, <a href="#General">General DITA best practices</a> are listed.</p>
+        <h3><a name="Text"></a>Text externalization</h3>
+        <p>Text externalization in DITA refers to separating content from its presentation or context-specific use, enabling reuse and localization.</p>
+        <ul>
+            <li>
+                <p><b>Modular content.</b> DITA emphasizes reusable content through topics (for example, concept, task, reference). Text should be written in a standalone, context-independent way to maximize reusability across documents or outputs.</p>
+            </li>
+            <li>
+                <p><b>Conref mechanism.</b> Use the <code>@conref</code> attribute to reference externalized text from another DITA file. This allows for maintaining a single source of truth for repeated content (for example, warnings, definitions). Example: <code>&lt;p conref="common.dita#topicID/paraID"/&gt;</code> pulls text from another file.</p>
+            </li>
+            <li>
+                <p><b>Key references (keyref).</b> For variable text (for example, product names), use <code>@keyref</code> with a key defined in a DITA map. This supports easy updates and localization. Example: <code>&lt;keyword keyref="product-name"/&gt;</code> where the key is mapped to "Product X" in a map file.</p>
+            </li>
+            <li>
+                <p><b>Localization.</b> Externalize translatable text into separate files or use DITA’s <code>@xml:lang</code> attribute to mark language-specific content, ensuring compatibility with translation management systems.</p>
+            </li>
+        </ul>
+        <h3><a name="Text2"></a>Text layout and formatting</h3>
+        <p>DITA focuses on semantic markup rather than direct formatting, leaving presentation to stylesheets (for example, XSLT, CSS) during publishing.</p>
+        <ul>
+            <li>
+                <p><b>Semantic tagging.</b> Use tags based on meaning, not appearance. For example:</p>
+                <ul style="list-style-type: circle;">
+                    <li>
+                        <p><code>&lt;p&gt;</code> for paragraphs, not for layout spacing.</p>
+                    </li>
+                    <li>
+                        <p><code>&lt;b&gt;</code> or <code>&lt;i&gt;</code> should be avoided; use <code>&lt;strong&gt;</code> or <code>&lt;emphasis&gt;</code> instead for bold or italic emphasis.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><b>Output-specific formatting.</b> Layout and formatting are controlled by the publishing pipeline (for example, DITA Open Toolkit). Avoid hard-coding styles (for example, font sizes, colours) in the source XML. For example, use <code>&lt;section&gt;</code> or <code>&lt;div&gt;</code> for structure, styled later via XSLT/CSS.</p>
+            </li>
+            <li>
+                <p><b>Tables and lists.</b> Use DITA-specific elements like <code>&lt;table&gt;</code>,<code> &lt;simpletable&gt;</code>, <code>&lt;ul&gt;</code>, or <code>&lt;ol&gt;</code> for structured layouts. Attributes like <code>@colsep</code> or <code>@rowsep</code> can suggest visual separators, but final rendering depends on the output transform.</p>
+            </li>
+            <li>
+                <p><b>Conditional processing.</b> Use <code>@props</code> or <code>@audience</code> attributes to tag content for specific layouts or audiences, filtered during publishing (for example, <code>&lt;p props="print-only"&gt;</code>).</p>
+            </li>
+            <li>
+                <p><b>Specialization.</b> For unique layout needs, create specialized DITA elements, but ensure they remain semantic rather than presentation-driven.</p>
+            </li>
+        </ul>
+        <h3><a name="Code"></a>Code and Markup language</h3>
+        <p>DITA provides specific elements for handling code, markup, and technical content, ensuring proper display and processing.</p>
+        <ul>
+            <li>
+                <p><b>Code blocks.</b> Use <code>&lt;codeblock&gt;</code> for multi-line code snippets. It preserves whitespace and supports syntax highlighting via output transforms. Example: <code>&lt;codeblock&gt;print("Hello, DITA!")&lt;/codeblock&gt;</code>.</p>
+            </li>
+            <li>
+                <p><b>Inline code.</b> Use <code>&lt;codeph&gt;</code> (code phrase) for short code or commands within text. For example, use <code>&lt;codeph&gt;git commit&lt;/codeph&gt;</code> to execute the commit.</p>
+            </li>
+            <li>
+                <p><b>Markup and syntax.</b> For XML/HTML markup examples, use <code>&lt;codeblock&gt;</code> or <code>&lt;pre&gt;</code> with <code>@outputclass</code> to hint at syntax (for example, <code>&lt;codeblock outputclass="xml"&gt;</code>).</p>
+            </li>
+            <li>
+                <p><b>File paths and commands.</b> Use <code>&lt;filepath&gt;</code> for paths (for example, <code>&lt;filepath&gt;/usr/bin&lt;/filepath&gt;</code>) and<code> &lt;cmdname&gt;</code> for command names (for example, <code>&lt;cmdname&gt;ls&lt;/cmdname&gt;</code>).</p>
+            </li>
+            <li>
+                <p><b>Escaping special characters.</b> Since DITA is XML-based, escape characters like &lt;, &gt;, and &amp; as &amp;lt;, &amp;gt;, and &amp;amp; in content, unless within <code>&lt;![CDATA[]]&gt;</code> sections.</p>
+            </li>
+            <li>
+                <p><b>Metadata and attributes.</b> Use <code>&lt;prolog&gt;</code> or <code>&lt;data&gt;</code> elements to embed metadata about code (for example, version, author), which can be processed for indexing or display.</p>
+            </li>
+        </ul>
+        <h3><a name="General"></a>General DITA best practices</h3>
+        <ul>
+            <li>
+                <p><b>Single sourcing.</b> Structure content to support multiple outputs (PDF, HTML, etc.) without altering the source.</p>
+            </li>
+            <li>
+                <p><b>Validation.</b> Ensure DITA files conform to the DITA DTD or schema to avoid processing errors.</p>
+            </li>
+            <li>
+                <p><b>Tooling.</b> Use DITA-aware editors (for example, Oxygen XML) to manage externalization, formatting previews, and code validation.</p>
+            </li>
+            <li>
+                <p><b>Metadata management.</b> Embed metadata in topics (for example, <code>&lt;prolog&gt;</code>) and maps (for example, <code>&lt;topicmeta&gt;</code>) to improve searchability, traceability, and content filtering.</p>
+            </li>
+            <li>
+                <p><b>Modular design.</b> Break content into small, focused topics to enhance reusability and maintainability, avoiding overly large or interdependent files.</p>
+            </li>
+            <li>
+                <p><b>Conditional processing.</b> Tag content with attributes like <code>@audience</code> or <code>@platform</code> to filter or adapt it for specific contexts, streamlining multi-audience outputs.</p>
+            </li>
+            <li>
+                <p><b>Version control.</b> Use a version control system or CCMS (for example, Git, Ixiasoft) to track changes to topics, maps, and externalized content, supporting collaboration and rollback.</p>
+            </li>
+            <li>
+                <p><b>Testing outputs.</b> Regularly test content in all target formats during development to catch layout, linking, or rendering issues early in the process.</p>
+            </li>
+        </ul>
+    </body>
+</html>

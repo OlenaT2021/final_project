@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Markdown</title>
+    </head>
+    <body>
+        <h1>Markdown</h1>
+        <p><b>Markdown</b> is a lightweight markup language for creating formatted text using a plain-text editor. Created by John Gruber in 2004, Markdown is now one of the world’s most popular markup languages.</p>
+        <p>Markdown’s simplicity and flexibility make it a powerful tool for creating clear, maintainable, and ready for internationalization and localization documentation. To support seamless translation and adaptation across global audiences, the following format-specific aspects are to be paid attention to:</p>
+        <ul>
+            <li>
+                <p><a href="#Text">text externalization</a> (makes content easier to translate, localize, and reuse),</p>
+            </li>
+            <li>
+                <p><a href="#Text2">structured formatting</a> (keeps Markdown readable, maintainable, and semantically structured),</p>
+            </li>
+            <li>
+                <p><a href="#Code">code clarity</a> (clear and accurate representation of code in documentation).</p>
+            </li>
+        </ul>
+        <p>At the end of the chapter, <a href="#General">General Markdown best practices</a> are given.</p>
+        <h3><a name="Text"></a>Text externalization</h3>
+        <p>Text externalization involves organizing content to be reusable, translatable, and maintainable, especially in collaborative or multilingual projects.</p>
+        <ul>
+            <li>
+                <p><b>Use consistent file structure.</b> Store Markdown files in a logical directory hierarchy (for example, <code>/docs</code>, <code>/blog</code>,<code> /guides</code>). Group related content to simplify navigation and external referencing. For example,<code> /docs/api/reference.md</code>, <code>/docs/api/examples.md</code>.</p>
+            </li>
+            <li>
+                <p><b>Modularize content.</b> Break large documents into smaller, reusable Markdown files. Use linking or transclusion (if supported by the platform) to include content dynamically. For example, instead of one monolithic <code>README.md</code>, split it into <code>introduction.md</code>,<code> installation.md</code>, etc., and link them.</p>
+            </li>
+            <li>
+                <p><b>Externalize strings for localization.</b> For translatable content, store strings in separate files (for example, JSON, YAML) and reference them in Markdown using variables or placeholders if the renderer supports it. For example: Use <code>{{site.title}}</code> for dynamic titles in static site generators like Hugo.</p>
+            </li>
+            <li>
+                <p><b>Avoid hardcoding text in code blocks or inline HTML.</b> Use variables/placeholders (<code>{{buttonLabel}}</code>) to facilitate localization and consistency or include files when supported (for example, with static site generators or documentation frameworks).</p>
+            </li>
+            <li>
+                <p><b>Use relative links.</b> When linking to other Markdown files or assets, use relative paths to ensure portability across environments. For example, <code>[Installation Guide](./installation.md)</code> instead of absolute URLs.</p>
+            </li>
+        </ul>
+        <h3><a name="Text2"></a>Text layout and formatting</h3>
+        <p>Effective layout and formatting improve readability and ensure consistency across documents.</p>
+        <ul>
+            <li>
+                <p><b>Follow a style guide.</b> Adopt a consistent style for headings, lists, and emphasis. For example:</p>
+                <ul style="list-style-type: circle;">
+                    <li>
+                        <p>Use <code>#</code> for main headings, <code>##</code> for subsections, and so on.</p>
+                    </li>
+                    <li>
+                        <p>Prefer <code>-</code> or <code>*</code> for unordered lists and <code>1.</code> for ordered lists.</p>
+                    </li>
+                    <li>
+                        <p>Use <code>**bold**</code> for emphasis and <code>_italic_</code> sparingly for secondary emphasis.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><b>Keep lines short.</b> Limit lines to 80-100 characters for readability in text editors and version control diffs. Use soft wraps instead of hard line breaks for paragraphs.</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><b>Use headings hierarchically.</b> Avoid skipping heading levels (for example, don’t jump from <code>#</code> to <code>###</code>). This ensures proper document structure and accessibility.</p>
+            </li>
+        </ul>
+        <MadCap:codeSnippet class="indent">
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="True" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve"># Main Title
+## Section
+### Subsection</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <ul>
+            <li>
+                <p><b>Avoid overusing emphasis.</b> Reserve bold and italics for critical information. Overuse reduces impact and clutters the text.</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><b>Use spaces for clarity.</b> Add blank lines between elements (for example, paragraphs, lists, code blocks) to improve visual separation.</p>
+            </li>
+        </ul>
+        <MadCap:codeSnippet class="indent">
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="True" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">This is a paragraph.
+- Item 1
+- Item 2
+Another paragraph.</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <ul>
+            <li>
+                <p><b>Use tables sparingly.</b> Tables are great for structured data, but can be hard to maintain. Keep them simple, and consider lists for less rigid data.</p>
+            </li>
+        </ul>
+        <MadCap:codeSnippet class="indent">
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="True" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">| Feature | Description |
+|---------|-------------|
+| A       | Does X      |
+| B       | Does Y      |</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <ul>
+            <li>
+                <p><b>Consistent link formatting.</b> Use descriptive link text instead of raw URLs. For inline links, use <code>[text](url)</code>. For reference-style links, group them at the document’s end to reduce clutter.</p>
+            </li>
+        </ul>
+        <MadCap:codeSnippet class="indent">
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="True" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">[Google](https://google.com)
+[Reference Link][ref]
+[ref]: https://example.com</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <h3><a name="Code"></a>Code and Markup language</h3>
+        <p>Markdown excels at presenting code and technical content. Follow these practices to ensure clarity and compatibility.</p>
+        <ul>
+            <li>
+                <p><b>Use fenced code blocks.</b> Enclose code in triple backticks (<code>```</code>) with the language identifier (for example, <code>```python</code>, <code>```json</code>) for syntax highlighting.</p>
+            </li>
+        </ul>
+        <MadCap:codeSnippet class="indent">
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="True" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">```python
+def hello_world():
+    print("Hello, World!")
+</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <ul>
+            <li>
+                <p><b>Indent inline code properly</b>. Use single backticks (<code>`</code>) for inline code or commands to distinguish them from regular text. Avoid spaces inside the backticks to prevent rendering issues.</p>
+            </li>
+        </ul>
+        <MadCap:codeSnippet class="indent">
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="True" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">Use the `print()` function to output text.</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <ul>
+            <li>
+                <p><b>Escape special characters.</b> When documenting Markdown itself or other markup languages (for example, HTML, XML), escape special characters like<code> #</code>,<code> *</code>, <code>&lt;</code>, or <code>&gt;</code> to prevent unintended rendering. Alternatively, wrap them in code blocks or inline code.</p>
+            </li>
+        </ul>
+        <MadCap:codeSnippet class="indent">
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="True" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">To create a heading, use `# Heading`.
+
+```html
+&lt;div class="container"&gt;Content&lt;/div&gt;</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <ul>
+            <li>
+                <p><b>Separate code from text.</b> Add blank lines before and after code blocks to avoid parsing errors in some renderers and enhance visual clarity.</p>
+            </li>
+        </ul>
+        <MadCap:codeSnippet class="indent">
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="True" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">This script logs a message:
+
+```javascript
+console.log("Hello, World!");</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <ul>
+            <li>
+                <p><b>Provide context for code.</b> Precede code blocks with a brief explanation of their purpose or functionality. This aids understanding, especially for international audiences who may rely on translated documentation.</p>
+            </li>
+        </ul>
+        <MadCap:codeSnippet class="indent">
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="True" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">This function calculates a square:
+
+```python
+def square(num):
+return num * num</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <ul>
+            <li>
+                <p><b>Test code accuracy.</b> Ensure all code snippets are functional and correct, especially in documentation meant for developers. Use tools like <code>doctest</code> for Python or linters for other languages to validate examples. Accurate code reduces confusion across languages.</p>
+            </li>
+        </ul>
+        <MadCap:codeSnippet class="indent">
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="True" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">This tested snippet sorts an array:
+
+```javascript
+const numbers = [3, 1, 2];
+numbers.sort((a, b) =&gt; a - b);</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <ul>
+            <li>
+                <p><b>Keep code concise.</b> Avoid overly long code blocks. Break complex code into smaller, logical chunks with explanations, or link to full files in a repository for extensive examples. This improves readability and translation accuracy.</p>
+            </li>
+        </ul>
+        <MadCap:codeSnippet class="indent">
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="True" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">For the full script, see [main.py](./main.py).
+
+```python
+def main():
+print("Starting...")</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <ul>
+            <li>
+                <p><b>Handle Markup languages carefully.</b> When documenting HTML, XML, or similar markup, always use code blocks to prevent rendering. For inline references, use backticks or escape characters to avoid breaking the document.</p>
+            </li>
+        </ul>
+        <MadCap:codeSnippet class="indent">
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="True" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">Use this HTML structure:
+
+```html
+&lt;header&gt;
+&lt;h1&gt;Welcome&lt;/h1&gt;
+&lt;/header&gt;</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <ul>
+            <li>
+                <p><b>Use code block metadata.</b> For advanced Markdown renderers (for example, Docusaurus, MkDocs), use metadata like line highlighting or captions if supported. This draws attention to key lines and aids comprehension in technical documentation.</p>
+            </li>
+        </ul>
+        <MadCap:codeSnippet class="indent">
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="True" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">```python {2}
+def example():
+print("Highlighted line")
+return True</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <h3><a name="General"></a>General Markdown best practices</h3>
+        <ul>
+            <li>
+                <p><b>Test rendering.</b> Preview Markdown in target platforms (for example, GitHub, VS Code, static site generators) to catch rendering inconsistencies. Different parsers (for example, CommonMark, GitHub Flavoured Markdown) may interpret syntax differently.</p>
+            </li>
+            <li>
+                <p><b>Use standard Markdown when possible.</b> Stick to CommonMark or GitHub Flavoured Markdown for broad compatibility. Avoid platform-specific extensions unless necessary.</p>
+            </li>
+            <li>
+                <p><b>Keep it simple.</b> Markdown’s strength is its minimalism. Avoid overloading documents with complex formatting or unsupported features.</p>
+            </li>
+            <li>
+                <p><b>Document conventions.</b> If collaborating, include a <code>CONTRIBUTING.md</code> or style guide specifying Markdown conventions (for example, heading styles, link formats).</p>
+            </li>
+            <li>
+                <p><b>Backup and version.</b> Store Markdown files in a version control system (for example, Git) to track changes and collaborate effectively.</p>
+            </li>
+            <li>
+                <p><b>Leverage tools.</b> Use linters (for example, <code>markdownlint</code>) and formatters to enforce consistency. Tools like Prettier can auto-format Markdown files.</p>
+            </li>
+        </ul>
+    </body>
+</html>
