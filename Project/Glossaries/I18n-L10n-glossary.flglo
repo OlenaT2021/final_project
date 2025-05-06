@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultGlossary>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term0">
+    <Terms>
+      <Term>My Term</Term>
+    </Terms>
+    <Definition>My definition</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term1"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Accessible rich internet applications (ARIA)</Term>
+    </Terms>
+    <Definition
+      Link="">A set of HTML roles and attributes developed by the World Wide Web Consortium (W3C). It aims to enhance the accessibility of web content and web-based applications for members of the disability community.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term2"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Cascading style sheets (CSS)</Term>
+    </Terms>
+    <Definition
+      Link="">A style sheet programming language that helps configure and manage the appearance and formatting of a document created in a markup language.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term3"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Component content management system (CCMS)</Term>
+    </Terms>
+    <Definition
+      Link="">A content management system that manages content at a granular level (component) rather than at the document level. Each component represents a single topic, concept or asset (for example, an image, table, product description, or a procedure).</Definition>
+  </GlossaryEntry>
+</CatapultGlossary>
