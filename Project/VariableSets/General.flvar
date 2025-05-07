@@ -3,20 +3,20 @@
   <Variable
     Comment=""
     Name="CompanyName"
-    EvaluatedDefinition="Logo Docs">Logo Docs</Variable>
+    EvaluatedDefinition="Digilang">Digilang</Variable>
   <Variable
     Comment=""
     Name="PhoneNumber">858 123 4567</Variable>
   <Variable
     Name="Email"
     Comment=""
-    EvaluatedDefinition="info@logodocs.com">info@logodocs.com</Variable>
+    EvaluatedDefinition="info@digilang.com">info@digilang.com</Variable>
   <Variable
     Name="StreetAddress"
     Comment=""
-    EvaluatedDefinition="1234 Bright Ave.">1234 Bright Ave.</Variable>
+    EvaluatedDefinition="1234 Pochaina Ave.">1234 Pochaina Ave.</Variable>
   <Variable
     Name="CityStateZip"
     Comment=""
-    EvaluatedDefinition="La Jolla, UA 10201">La Jolla, UA 10201</Variable>
+    EvaluatedDefinition="Kyiv, UA 10201">Kyiv, UA 10201</Variable>
 </CatapultVariableSet>

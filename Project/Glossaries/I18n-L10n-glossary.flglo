@@ -1,16 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultGlossary>
   <GlossaryEntry
-    glossTerm="I18n-L10n-glossary.Term0">
-    <Terms>
-      <Term>My Term</Term>
-    </Terms>
-    <Definition>My definition</Definition>
-  </GlossaryEntry>
-  <GlossaryEntry
     glossTerm="I18n-L10n-glossary.Term1"
     Stem=""
-    IgnoreCase="false">
+    IgnoreCase="true">
     <Terms>
       <Term>Accessible rich internet applications (ARIA)</Term>
     </Terms>
@@ -20,7 +13,7 @@
   <GlossaryEntry
     glossTerm="I18n-L10n-glossary.Term2"
     Stem=""
-    IgnoreCase="false">
+    IgnoreCase="true">
     <Terms>
       <Term>Cascading style sheets (CSS)</Term>
     </Terms>
@@ -30,11 +23,251 @@
   <GlossaryEntry
     glossTerm="I18n-L10n-glossary.Term3"
     Stem=""
-    IgnoreCase="false">
+    IgnoreCase="true">
     <Terms>
       <Term>Component content management system (CCMS)</Term>
     </Terms>
     <Definition
       Link="">A content management system that manages content at a granular level (component) rather than at the document level. Each component represents a single topic, concept or asset (for example, an image, table, product description, or a procedure).</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term4"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Darwin Information Typing Architecture (DITA)</Term>
+    </Terms>
+    <Definition
+      Link="">A set of document types for authoring and organizing topic-oriented information, as well as a set of mechanisms for combining, extending, and constraining document types.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term5"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Document type definition (DTD)</Term>
+    </Terms>
+    <Definition
+      Link="">A structured description of the structure and content of an XML document.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term6"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Extensible markup language (XML)</Term>
+    </Terms>
+    <Definition
+      Link="">A markup language and file format for storing, transmitting, and reconstructing data. It defines a set of rules for encoding documents in a format that is both human-readable and machine-readable.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term7"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>eXtensible Stylesheet Language (XSLT)</Term>
+    </Terms>
+    <Definition
+      Link="">An XML-based stylesheet language to present, style and extract fragments of XML documents.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term8"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Globalization (G11N)</Term>
+    </Terms>
+    <Definition
+      Link="">The process by which businesses or other organizations develop international influence or start operating on a global scale.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term9"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Hypertext Markup Language 5 (HTML5)</Term>
+    </Terms>
+    <Definition
+      Link="">A markup language used for structuring and presenting hypertext documents on the World Wide Web.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term10"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Input method editor (IME)</Term>
+    </Terms>
+    <Definition
+      Link="">A program that provides a specialized user interface for text input.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term11"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Internationalization (I18N)</Term>
+    </Terms>
+    <Definition
+      Link="">The design and development of a product, application or document content that enables easy Localization for target audiences that vary in culture, region, or language.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term12"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Localization (L10N)</Term>
+    </Terms>
+    <Definition
+      Link="">The linguistic adaptation of content for the target region, its languages, and cultural particularities to make it appropriate, easily understandable, and comfortable to use for local native language speakers.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term13"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Markdown</Term>
+    </Terms>
+    <Definition
+      Link="">A lightweight markup language created by John Gruber in 2004. It is used for adding formatting elements to plaintext documents. It is popular due to its readability, portability, and broad application support.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term14"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Microsoft Word</Term>
+    </Terms>
+    <Definition
+      Link="">A word processing program that allows for the creation of both simple and complex documents.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term15"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>PDF/UA standard (formally known as ISO 14289-1)</Term>
+    </Terms>
+    <Definition
+      Link="">A standard designed to ensure that PDFs are universally accessible. Aimed at everyone involved in creating PDFs, it sets minimum requirements that make sure documents are compliant with devices that support people with disabilities.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term16"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Portable document format (PDF)</Term>
+    </Terms>
+    <Definition
+      Link="">A file format developed by Adobe in 1992 to present documents, including text formatting and images, in a manner independent of application software, hardware, and operating systems. It is used when there is a need to save files that cannot be modified but still need to be easily shared and printed.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term17"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Project manager (PM)</Term>
+    </Terms>
+    <Definition
+      Link="">A professional charged with overseeing the process of planning, executing and delegating responsibilities related to an organization's information technology (IT) pursuits and goals.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term19"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Quality assurance (QA)</Term>
+    </Terms>
+    <Definition
+      Link="">Any systematic process of determining whether a product or service meets specified requirements. QA establishes and maintains set requirements for developing or manufacturing reliable products.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term22"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Right-to-left (RTL)</Term>
+    </Terms>
+    <Definition
+      Link="">Languages written and read from right to left, top to bottom.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term23"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Transclusion</Term>
+    </Terms>
+    <Definition
+      Link="">In computer science, it is the inclusion of part or all of an electronic document into one or more other documents by reference via hypertext. Transclusion is usually performed when the referencing document is displayed, and is normally automatic and transparent to the end user.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term24"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Translation (T9N)</Term>
+    </Terms>
+    <Definition
+      Link="">The literal word-for-word transformation of a source text into the target language.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term25"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Translation management systems (TMS)</Term>
+    </Terms>
+    <Definition
+      Link="">A software that automates repetitive or manual tasks to make the translation process as efficient as possible.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term26"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>User acceptance testing (UAT)</Term>
+    </Terms>
+    <Definition
+      Link="">A phase of software development in which the software is tested in the real world by its intended audience. It is also called application testing or end-user testing.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term27"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>User interface (UI)</Term>
+    </Terms>
+    <Definition
+      Link="">Anything a user may interact with to use a digital product or service. This includes everything from screens and touchscreens, keyboards, sounds, and even lights.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term28"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>versus (vs)</Term>
+    </Terms>
+    <Definition
+      Link="">Against, in contrast to or as the alternative of something.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term29"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Web accessibility initiative (WAI)</Term>
+    </Terms>
+    <Definition
+      Link="">An effort by the W3C to develop standards and guidelines to help everyone building the web ensure and improve accessibility for people with various challenges.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term30"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Web content accessibility guide (WCAG)</Term>
+    </Terms>
+    <Definition
+      Link="">A set of recommendations for making web content more accessible developed by W3C's WAI, primarily for people with disabilities — but also for all user agents, including some highly limited devices or services, such as digital assistants.</Definition>
   </GlossaryEntry>
 </CatapultGlossary>
