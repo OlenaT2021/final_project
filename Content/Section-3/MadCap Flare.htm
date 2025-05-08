@@ -21,13 +21,13 @@
         <p>Text externalization in MadCap Flare refers to separating content from its presentation or managing reusable text across multiple outputs or projects. This is particularly useful for single-sourcing, localization, and maintaining consistency.</p>
         <ul>
             <li>
-                <p><b>Variables.</b> Use variables for text that appears repeatedly (for example, product names, version numbers). Define these in a variable file and apply them across topics. For example, updating a variable like<code> "ProductName"</code> in one place updates it everywhere, saving time and reducing errors. Consider output-specific variables if text differs between formats (for example, "Click here" for HTML5 vs "See page X" for PDF).</p>
+                <p><b>Variables.</b> Use variables for text that appears repeatedly (for example, product names, version numbers). Define these in a variable file and apply them across topics. For example, updating a variable like <code>"ProductName"</code> in one place updates it everywhere, saving time and reducing errors. Consider output-specific variables if text differs between formats (for example, "Click here" for HTML5 vs "See page X" for PDF).</p>
             </li>
             <li>
-                <p><b>Snippets.</b> For larger reusable text blocks (for example, disclaimers, procedures), snippets allow externalized content to be inserted into multiple topics. Choose between snippetText (inline, no formatting preserved) and snippetBlock (preserves formatting) based on whether layout consistency matters across outputs. For instance, a code-heavy snippet might need snippetBlock to retain indentation in PDF and HTML5.</p>
+                <p><b>Snippets.</b> For larger reusable text blocks (for example, disclaimers, procedures), snippets allow externalized content to be inserted into multiple topics. Choose between <code>snippetText</code> (inline, no formatting preserved) and <code>snippetBlock</code> (preserves formatting) based on whether layout consistency matters across outputs. For instance, a code-heavy snippet might need <code>snippetBlock</code> to retain indentation in PDF and HTML5.</p>
             </li>
             <li>
-                <p><b>Condition tags.</b> Externalize content by applying conditions to include or exclude text based on the target output. For example, tag a section as "WebOnly" for HTML5 or "PrintOnly" for PDF. This ensures format-specific text is externalized and managed efficiently without duplicating files.</p>
+                <p><b>Condition tags.</b> Externalize content by applying conditions to include or exclude text based on the target output. For example, tag a section as<b> "WebOnly"</b> for HTML5 or<b> "PrintOnly"</b> for PDF. This ensures format-specific text is externalized and managed efficiently without duplicating files.</p>
             </li>
             <li>
                 <p><b>Localization.</b> For multilingual projects, externalize translatable text into resource files or integrate with MadCap Lingo. Ensure variables and snippets are designed with translation in mind (for example, avoid embedding context-specific phrases that don’t translate well).</p>
@@ -37,7 +37,7 @@
         <p>Text layout and formatting in Flare involve styling content to suit different outputs while leveraging its single-sourcing strengths.</p>
         <ul>
             <li>
-                <p><b>Stylesheets (CSS).</b> Use a single CSS file with medium-specific styles (for example, "print" for PDF, "non-print" for HTML5) to control layout and formatting. For example, set font-size in relative units (for example, em or %) for web outputs to ensure scalability, but use absolute units (for example, pt) for print to guarantee precision in PDFs.</p>
+                <p><b>Stylesheets (CSS).</b> Use a single CSS file with medium-specific styles (for example, <b>"print"</b> for PDF, <b>"non-print"</b> for HTML5) to control layout and formatting. For example, set font-size in relative units (for example, <code>em</code> or %) for web outputs to ensure scalability, but use absolute units (for example, <code>pt</code>) for print to guarantee precision in PDFs.</p>
             </li>
             <li>
                 <p><b>Responsive design.</b> Flare’s Layout resizer and media queries allow for previewing and adjusting text layout for different screen sizes (for example, tablet, mobile). Define breakpoints in the CSS to tweak text wrapping, margins, or font sizes for HTML5 outputs, while keeping PDF layouts static.</p>
@@ -56,16 +56,16 @@
         <p>Handling code and markup in Flare requires attention to how it is authored, displayed, and rendered across outputs.</p>
         <ul>
             <li>
-                <p><b>Code snippets.</b> Use Flare’s native MadCap:codeSnippet element (introduced in Flare 2020) to insert formatted code with syntax highlighting. Specify the language (for example, Python, JavaScript) for accurate highlighting, and customize via CSS (for example, MadCap|codeSnippet styles) for font, colours, or line numbering. In HTML5, a “Copy” button is auto-added; ensure it’s styled for usability. For PDF, verify the snippet renders cleanly without overflow.</p>
+                <p><b>Code snippets.</b> Use Flare’s native <code>MadCap:codeSnippet</code> element (introduced in Flare 2020) to insert formatted code with syntax highlighting. Specify the language (for example, Python, JavaScript) for accurate highlighting, and customize via CSS (for example, <code>MadCap|codeSnippet</code> styles) for font, colours, or line numbering. In HTML5, a “Copy” button is auto-added; ensure it’s styled for usability. For PDF, verify the snippet renders cleanly without overflow.</p>
             </li>
             <li>
                 <p><b>Preserving inline HTML.</b> Pasting raw HTML into Flare’s XML Editor can disrupt formatting due to its reformatting behaviour. To preserve it, paste into a snippetBlock or edit the topic in an external text editor, then import. For example, syntax-highlighted code from tools like Pygments should reference an external CSS file rather than inline styles, as Flare’s PDF engine may not handle the latter well.</p>
             </li>
             <li>
-                <p><b>Markdown import.</b> Flare supports importing Markdown, mapping code blocks to MadCap:codeSnippet. Ensure the source Markdown uses proper triple-backtick syntax (<code>```</code>) with language identifiers for seamless conversion. Post-import, tweak styles if the default highlighting doesn’t match the output needs.</p>
+                <p><b>Markdown import.</b> Flare supports importing Markdown, mapping code blocks to <code>MadCap:codeSnippet</code>. Ensure the source Markdown uses proper triple-backtick syntax (<code>```</code>) with language identifiers for seamless conversion. Post-import, tweak styles if the default highlighting doesn’t match the output needs.</p>
             </li>
             <li>
-                <p><b>Semantic Markup.</b> While Flare uses XHTML internally, it’s not natively a semantic markup tool like DITA. Simulate semantic structure with consistent class names (for example, p.Note, p.Warning) and apply them via the stylesheet. For DITA output, Flare converts some elements (for example, variables to &lt;ph&gt; tags), but test thoroughly as full semantic fidelity may require post-processing.</p>
+                <p><b>Semantic Markup.</b> While Flare uses XHTML internally, it’s not natively a semantic markup tool like DITA. Simulate semantic structure with consistent class names (for example, <code>p.Note</code>, <code>p.Warning</code>) and apply them via the stylesheet. For DITA output, Flare converts some elements (for example, variables to <code>&lt;ph&gt;</code> tags), but test thoroughly as full semantic fidelity may require post-processing.</p>
             </li>
             <li>
                 <p><b>Clean-up and validation.</b> Use Flare’s Markup Suggestions tool to identify and fix issues like empty tags or excessive spaces in the XHTML. For complex code, preview outputs (HTML5, PDF) to catch rendering quirks, as the XML Editor’s display may differ from the final result.</p>
@@ -101,7 +101,7 @@
                 <p><b>Modular design.</b> Flare supports modular content with topic-based authoring—small, reusable topics linked via TOCs or cross-references—and snippets for repeated blocks, ideal for scalable documentation.</p>
             </li>
             <li>
-                <p><b>Conditional processing.</b> Condition tags are a native feature, enabling content filtering by output (for example, "WebOnly" for HTML5, "PrintOnly" for PDF). Apply them to text, snippets, or topics, then configure targets to include/exclude conditions.</p>
+                <p><b>Conditional processing.</b> Condition tags are a native feature, enabling content filtering by output (for example, <b>"WebOnly"</b> for HTML5, <b>"PrintOnly"</b> for PDF). Apply them to text, snippets, or topics, then configure targets to include/exclude conditions.</p>
             </li>
             <li>
                 <p><b>Version control.</b> Flare offers built-in source control integration (for example, Git, SVN) via the Source control menu, or Global project linking for managing shared content across projects, supporting collaborative versioning.</p>

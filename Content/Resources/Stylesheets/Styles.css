@@ -97,8 +97,9 @@ p.IndexHeading
 
 img
 {
-	border: none;
 	max-width: 100%;
+	border-left-color: transparent;
+	border: solid 2px transparent;
 }
 
 p
@@ -561,11 +562,12 @@ p.footer-sub
 
 MadCap|codeSnippet
 {
-	padding: 1em;
-	padding-bottom: 1em;
-	padding-left: 1em;
-	padding-right: 1em;
-	padding-top: 1em;
+	padding: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	width: 350px;
 }
 
 div
@@ -749,5 +751,22 @@ div
 		mc-format: '{quote}{para}{quote} {pageref}';
 		text-decoration: none;
 	}
+}
+
+p.example
+{
+	
+}
+
+div.example-grey
+{
+	background: #e6e8ea;
+	padding: 5px 10px 5px 15px;
+	margin: 10px 180px 10px 30px;
+}
+
+div.example p
+{
+	mc-auto-number-format: '{b}Example{/b} ';
 }
 
