@@ -1,0 +1,1 @@
+define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/Glossary.htm'],s:['$10','inlin','track'],p:[['$10',6],['chapter',21],['environment',19],['info',14],['object',16],['say',3],['to',16]]});
