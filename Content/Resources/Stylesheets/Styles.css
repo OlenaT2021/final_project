@@ -111,6 +111,7 @@ p
 	letter-spacing: 0.25;
 	orphans: 3;
 	widows: 3;
+	spacing: inherit;
 }
 
 p.table-text
