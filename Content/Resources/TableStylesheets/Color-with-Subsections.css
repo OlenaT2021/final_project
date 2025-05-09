@@ -19,7 +19,7 @@ mcTableStyle
 	border-bottom-width: 0px;
 	border-bottom-color: #000000;
 	max-id: 4;
-	border-spacing-y: 21;
+	border-spacing-y: 24;
 	cell-padding-left: 5px;
 	cell-padding-right: 5px;
 	cell-padding-top: 5px;
@@ -70,6 +70,7 @@ mcTableBodyStyle
 	cell-content-style-class: table-text;
 	vertical-align: top;
 	type: Manual;
+	size: 0;
 }
 
 mcTableBodyStyle
@@ -107,7 +108,7 @@ mcTableBodyStyle
 	border-bottom-style: solid;
 	border-bottom-color: #000000;
 	border-bottom-width: 0px;
-	border-spacing: 6px 21px;
+	border-spacing: 6px 24px;
 }
 
 .TableStyle-Color-with-Subsections-Column-Column1
@@ -401,7 +402,7 @@ mcTableBodyStyle
 
 .TableStyle-Color-with-Subsections-Body-FirstLevel
 {
-	
+	height: 0;
 }
 
 .TableStyle-Color-with-Subsections-BodyI-Column1-FirstLevel
