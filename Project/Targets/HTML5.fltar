@@ -7,10 +7,17 @@
   GlossaryTermConversion="marked"
   MasterPage="/Content/Resources/MasterPages/Other-Topics.flmsp"
   DefaultUrl="/Content/Home.htm"
-  ConditionTagExpression="include[Default.ScreenOnly] exclude[Default.PrintOnly] ">
+  ConditionTagExpression="include[Default.ScreenOnly] exclude[Default.PrintOnly] "
+  OutputFile="index.html">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"
     GenerateIndexProxy="true"
     GenerateGlossaryProxy="true" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/MyDestination.fldes"
+      Publish="true"
+      IsResource="false" />
+  </Destinations>
 </CatapultTarget>
