@@ -21,16 +21,16 @@
         <p>Text externalization refers to separating content (like strings or text) from its presentation or structure, often for localization, reusability, or collaboration purposes.</p>
         <ul>
             <li>
-                <p><b>Use of styles and templates.</b> Word doesn’t inherently support external text files (like a <code>.propertie</code>s file in software development), but it is possible to simulate externalization by maintaining a master document or template with predefined styles. Store reusable text snippets (for example, boilerplate content) in a separate Word file or a document management system and copy them in as needed.</p>
+                <p><b>Use of styles and templates.</b> Word doesn’t inherently support external text files (like a <code>.properties</code> file in software development), but it is possible to simulate externalization by maintaining a master document or template with predefined styles. Store reusable text snippets (for example, boilerplate content) in a separate Word file or a document management system and copy them in as needed.</p>
             </li>
             <li>
-                <p><b>Fields and linked content.</b> Use Word’s “Insert Object” or “Link to File” features to pull in text from external sources (for example, another Word doc or Excel file). This keeps content dynamic but requires manual updates if the source changes and isn’t linked live.</p>
+                <p><b>Fields and linked content.</b> Use Word’s <b>"Insert Object"</b> or <b>"Link to File"</b> features to pull in text from external sources (for example, another Word doc or Excel file). This keeps content dynamic but requires manual updates if the source changes and isn’t linked live.</p>
             </li>
             <li>
                 <p><b>Localization.</b> For multilingual documents, consider creating separate Word files per language rather than embedding all translations in one file. Word’s lack of built-in string externalization means that there is a need for a manual process or third-party tools (for example, CAT tools like SDL Trados) to manage translations.</p>
             </li>
             <li>
-                <p><b>Plain text export.</b> If externalizing to plain text for other systems, save as <code>.txt</code> or use "Save As" with encoding options (for example, UTF-8) to ensure compatibility. Note that formatting will be lost unless you use RTF (Rich Text Format).</p>
+                <p><b>Plain text export.</b> If externalizing to plain text for other systems, save as <code>.txt</code> or use <b>"Save As"</b> with encoding options (for example, UTF-8) to ensure compatibility. Note that formatting will be lost unless you use RTF (Rich Text Format).</p>
             </li>
         </ul>
         <h3><a name="Text2"></a>Text layout and formatting</h3>
@@ -46,13 +46,13 @@
                 <p><b>Section breaks.</b> Use section breaks (Next Page, Continuous) to vary formatting (for example, different headers/footers or page numbering) within a single document. This is critical for long documents like reports or books.</p>
             </li>
             <li>
-                <p><b>Fonts and spacing.</b> Word supports a wide range of fonts and precise spacing controls (line spacing, kerning). However, ensure fonts are embedded (File &gt; Options &gt; Save &gt; Embed fonts) if sharing with others to avoid substitution issues.</p>
+                <p><b>Fonts and spacing.</b> Word supports a wide range of fonts and precise spacing controls (line spacing, kerning). However, ensure fonts are embedded (<b>File</b> &gt; <b>Options</b> &gt; <b>Save</b> &gt; <b>Embed fonts</b>) if sharing with others to avoid substitution issues.</p>
             </li>
             <li>
                 <p><b>Tables and graphics</b>. Align text with tables or images using anchoring options (for example, “In Line with Text” vs “Top and Bottom”). Misaligned elements can disrupt flow, especially in multi-page docs.</p>
             </li>
             <li>
-                <p><b>Track changes.</b> For collaborative editing, enable Track Changes to preserve original text while suggesting edits. This impacts layout minimally but can clutter the view if heavily used.</p>
+                <p><b>Track changes.</b> For collaborative editing, enable <b>Track Changes</b> to preserve original text while suggesting edits. This impacts layout minimally but can clutter the view if heavily used.</p>
             </li>
         </ul>
         <h3><a name="Code"></a>Code and Markup handling</h3>
@@ -65,13 +65,13 @@
                 <p><b>Syntax highlighting.</b> Word doesn’t natively support syntax highlighting. It is possible to mimic it by manually applying colours to keywords, strings, etc., or by pasting pre-highlighted code from tools like Notepad++ or VS Code (via screenshots or formatted text copy).</p>
             </li>
             <li>
-                <p><b>Preserving indentation.</b> Use tabs or spaces consistently, as Word’s auto-formatting (for example, converting tabs to indents) can disrupt code structure. Disable auto-format options (File &gt; Options &gt; Proofing &gt; AutoCorrect Options) if needed.</p>
+                <p><b>Preserving indentation.</b> Use tabs or spaces consistently, as Word’s auto-formatting (for example, converting tabs to indents) can disrupt code structure. Disable auto-format options (<b>File</b> &gt; <b>Options</b> &gt; <b>Proofing</b> &gt; <b>AutoCorrect Options</b>) if needed.</p>
             </li>
             <li>
                 <p><b>Markup (for example, HTML/XML).</b> For displaying markup, treat it like code—use monospaced fonts and avoid Word’s smart quotes or auto-bullets, which can corrupt tags. Alternatively, insert it as a text box or object to isolate it from surrounding content.</p>
             </li>
             <li>
-                <p><b>Developer tab.</b> For advanced users, enable the Developer tab to insert content controls or form fields, which can structure code-like data. However, this is more for interactive documents than raw code display.</p>
+                <p><b>Developer tab.</b> For advanced users, enable the <b>Developer</b> tab to insert content controls or form fields, which can structure code-like data. However, this is more for interactive documents than raw code display.</p>
             </li>
             <li>
                 <p><b>Exporting code.</b> If exporting to a coding environment, copy-paste into a text editor first to strip Word’s hidden formatting (for example, RTF metadata), which can cause errors.</p>
@@ -92,19 +92,19 @@
                 <p><b>Bookmarks or cross-references.</b> Use them for internal navigation. Avoid manually typing references like "See section 2.3."</p>
             </li>
             <li>
-                <p><b>Image optimization.</b> Compress images within the document to reduce file size without compromising quality. This can be done by selecting an image, then choosing "Compress Pictures" under the Picture Format tab.</p>
+                <p><b>Image optimization.</b> Compress images within the document to reduce file size without compromising quality. This can be done by selecting an image, then choosing "Compress Pictures" under the <b>Picture Format</b> tab.</p>
             </li>
             <li>
-                <p><b>“Save as” regular usage.</b> When making significant changes, use "Save As" to create versioned copies of the document or enable AutoRecover (File &gt; Options &gt; Save). This practice helps track revisions and prevents data loss.​ Another option to track changes is to use cloud backups (OneDrive) for real-time syncing.</p>
+                <p><b>“Save as” regular usage.</b> When making significant changes, use <b>"Save As"</b> to create versioned copies of the document or enable <b>AutoRecover</b> (<b>File</b> &gt; <b>Options</b> &gt; <b>Save</b>). This practice helps track revisions and prevents data loss.​ Another option to track changes is to use cloud backups (OneDrive) for real-time syncing.</p>
             </li>
             <li>
-                <p><b>Version control.</b> Word’s “Compare Documents” feature can track changes between versions, but for externalized text or code, consider a proper VCS (for example, Git) outside Word.</p>
+                <p><b>Version control.</b> Word’s "Compare Documents" feature can track changes between versions, but for externalized text or code, consider a proper VCS (for example, Git) outside Word.</p>
             </li>
             <li>
-                <p><b>Accessibility.</b> Use Alt Text for images and proper heading structures for screen readers, especially in formatted docs shared widely.</p>
+                <p><b>Accessibility.</b> Use <b>Alt Text</b> for images and proper heading structures for screen readers, especially in formatted docs shared widely.</p>
             </li>
             <li>
-                <p><b>“Inspect Document” Feature.</b> Before sharing the document, use the "Inspect Document" tool (File &gt; Info &gt; Check for Issues &gt; Inspect Document) to remove hidden metadata or personal information.​</p>
+                <p><b>“Inspect Document” Feature.</b> Before sharing the document, use the "Inspect Document" tool (<b>File</b> &gt; <b>Info</b> &gt; <b>Check for Issues</b> &gt; <b>Inspect Document</b>) to remove hidden metadata or personal information.​</p>
             </li>
         </ul>
     </body>

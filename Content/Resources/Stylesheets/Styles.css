@@ -767,6 +767,13 @@ div.example-grey
 
 div.example p
 {
-	mc-auto-number-format: '{b}Example{/b} ';
+	mc-auto-number-format: '{b}{color #000000}Example{/color}{/b}   ';
+	mc-auto-number-class: Setoff;
+}
+
+span.Setoff
+{
+	letter-spacing: 1px;
+	text-transform: uppercase;
 }
 

@@ -24,11 +24,21 @@
                 <p><b>Modular content.</b> DITA emphasizes reusable content through topics (for example, concept, task, reference). Text should be written in a standalone, context-independent way to maximize reusability across documents or outputs.</p>
             </li>
             <li>
-                <p><b>Conref mechanism.</b> Use the <code>@conref</code> attribute to reference externalized text from another DITA file. This allows for maintaining a single source of truth for repeated content (for example, warnings, definitions). Example: <code>&lt;p conref="common.dita#topicID/paraID"/&gt;</code> pulls text from another file.</p>
+                <p><b>Conref mechanism.</b> Use the <code>@conref</code> attribute to reference externalized text from another DITA file. This allows for maintaining a single source of truth for repeated content (for example, warnings, definitions). </p>
             </li>
+        </ul>
+        <div class="example-grey">
+            <p><b>EXAMPLE</b> <code>&lt;p conref="common.dita#topicID/paraID"/&gt;</code> pulls text from another file.</p>
+        </div>
+        <ul>
             <li>
-                <p><b>Key references (keyref).</b> For variable text (for example, product names), use <code>@keyref</code> with a key defined in a DITA map. This supports easy updates and localization. Example: <code>&lt;keyword keyref="product-name"/&gt;</code> where the key is mapped to "Product X" in a map file.</p>
+                <p><b>Key references (keyref).</b> For variable text (for example, product names), use <code>@keyref</code> with a key defined in a DITA map. This supports easy updates and localization. </p>
             </li>
+        </ul>
+        <div class="example-grey">
+            <p><b>EXAMPLE</b> <code>&lt;keyword keyref="product-name"/&gt;</code> where the key is mapped to "Product X" in a map file.</p>
+        </div>
+        <ul>
             <li>
                 <p><b>Localization.</b> Externalize translatable text into separate files or use DITA’s <code>@xml:lang</code> attribute to mark language-specific content, ensuring compatibility with translation management systems.</p>
             </li>
@@ -37,15 +47,19 @@
         <p>DITA focuses on semantic markup rather than direct formatting, leaving presentation to stylesheets (for example, XSLT, CSS) during publishing.</p>
         <ul>
             <li>
-                <p><b>Semantic tagging.</b> Use tags based on meaning, not appearance. For example:</p>
-                <ul style="list-style-type: circle;">
-                    <li>
-                        <p><code>&lt;p&gt;</code> for paragraphs, not for layout spacing.</p>
-                    </li>
-                    <li>
-                        <p><code>&lt;b&gt;</code> or <code>&lt;i&gt;</code> should be avoided; use <code>&lt;strong&gt;</code> or <code>&lt;emphasis&gt;</code> instead for bold or italic emphasis.</p>
-                    </li>
-                </ul>
+                <p><b>Semantic tagging.</b> Use tags based on meaning, not appearance.</p>
+                <div class="example-grey">
+                    <p><b>EXAMPLE</b>
+                    </p>
+                    <ul style="list-style-type: circle;">
+                        <li>
+                            <p><code>&lt;p&gt;</code> for paragraphs, not for layout spacing.</p>
+                        </li>
+                        <li>
+                            <p><code>&lt;b&gt;</code> or <code>&lt;i&gt;</code> should be avoided; use <code>&lt;strong&gt;</code> or <code>&lt;emphasis&gt;</code> instead for bold or italic emphasis.</p>
+                        </li>
+                    </ul>
+                </div>
             </li>
             <li>
                 <p><b>Output-specific formatting.</b> Layout and formatting are controlled by the publishing pipeline (for example, DITA Open Toolkit). Avoid hard-coding styles (for example, font sizes, colours) in the source XML. For example, use <code>&lt;section&gt;</code> or <code>&lt;div&gt;</code> for structure, styled later via XSLT/CSS.</p>
@@ -67,8 +81,13 @@
                 <p><b>Code blocks.</b> Use <code>&lt;codeblock&gt;</code> for multi-line code snippets. It preserves whitespace and supports syntax highlighting via output transforms. Example: <code>&lt;codeblock&gt;print("Hello, DITA!")&lt;/codeblock&gt;</code>.</p>
             </li>
             <li>
-                <p><b>Inline code.</b> Use <code>&lt;codeph&gt;</code> (code phrase) for short code or commands within text. For example, use <code>&lt;codeph&gt;git commit&lt;/codeph&gt;</code> to execute the commit.</p>
+                <p><b>Inline code.</b> Use <code>&lt;codeph&gt;</code> (code phrase) for short code or commands within text. </p>
             </li>
+        </ul>
+        <div class="example-grey">
+            <p><b>EXAMPLE</b> Use <code>&lt;codeph&gt;git commit&lt;/codeph&gt;</code> to execute the commit.</p>
+        </div>
+        <ul>
             <li>
                 <p><b>Markup and syntax.</b> For XML/HTML markup examples, use <code>&lt;codeblock&gt;</code> or <code>&lt;pre&gt;</code> with <code>@outputclass</code> to hint at syntax (for example, <code>&lt;codeblock outputclass="xml"&gt;</code>).</p>
             </li>
