@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
     </head>
@@ -11,15 +11,11 @@
                 <tbody>
                     <tr>
                         <td>
-                            <p class="footer"><MadCap:variable name="General.Email" />
+                            <p class="footer"><MadCap:variable name="General.Created by" />
                             </p>
-                            <p class="footer"><MadCap:variable name="General.PhoneNumber" />
+                            <p class="footer"><MadCap:variable name="General.Date" />
                             </p>
-                            <p class="footer"><MadCap:variable name="General.StreetAddress" />
-                            </p>
-                            <p class="footer"><MadCap:variable name="General.CityStateZip" />
-                            </p>
-                            <p class="footer-sub">Created Using MadCap&#160;Flare</p>
+                            <p class="footer-sub">Created using MadCap&#160;Flare</p>
                         </td>
                         <td style="text-align: right;">
                             <img src="../Images/Logo.png" />
