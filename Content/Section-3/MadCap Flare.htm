@@ -25,11 +25,11 @@
             </li>
         </ul>
         <div class="example-grey">
-            <p><b>EXAMPLE</b> Updating a variable like <code>"ProductName"</code> in one place updates it everywhere, saving time and reducing errors. </p>
+            <p MadCap:autonum="&lt;b&gt;Example&lt;/b&gt; &#160;&#160;">Update a variable like <code>"ProductName"</code> in one place updates it everywhere, saving time and reducing errors.</p>
         </div>
         <p style="text-indent: 0.5in;">Consider output-specific variables if text differs between formats</p>
         <div class="example-grey">
-            <p><b>EXAMPLE</b> "Click here" for HTML5 vs "See page X" for PDF).</p>
+            <p MadCap:autonum="&lt;b&gt;Example&lt;/b&gt; &#160;&#160;"> "Click here" for HTML5 vs "See page X" for PDF</p>
         </div>
         <ul>
             <li>
@@ -50,7 +50,7 @@
             </li>
         </ul>
         <div class="example-grey">
-            <p><b>EXAMPLE</b> Set font-size in relative units (for example, <code>em</code> or %) for web outputs to ensure scalability, but use absolute units (for example, <code>pt</code>) for print to guarantee precision in PDFs.</p>
+            <p MadCap:autonum="&lt;b&gt;Example&lt;/b&gt; &#160;&#160;"> Set font-size in relative units (for example, <code>em</code> or %) for web outputs to ensure scalability, but use absolute units (for example, <code>pt</code>) for print to guarantee precision in PDFs.</p>
         </div>
         <ul>
             <li>
@@ -60,21 +60,26 @@
                 <p><b>Typography.</b> PDF outputs benefit from Flare’s enhanced typography options (for example, small font rendering). Adjust line spacing (line-height), letter spacing (letter-spacing), and font families in the stylesheet to optimize readability per format. For instance, a sans-serif font might suit HTML5, while a serif font enhances PDF legibility.</p>
             </li>
             <li>
-                <p><b>Proxies and auto-generated content.</b> Format tables of contents (TOC), mini-TOCs, or indexes using proxy styles (for example, MadCap|TOCProxy). For print, remove default borders or adjust leader lines (for example, solid vs dotted) via CSS. For HTML5, ensure these elements collapse gracefully on smaller screens.</p>
+                <p><b>Proxies and auto-generated content.</b> Format tables of contents (TOC), mini-TOCs, or indexes using proxy styles (for example, MadCap|TOCProxy). For <b>print</b>, remove default borders or adjust leader lines (for example, solid vs dotted) via CSS. For <b>HTML5</b>, ensure these elements collapse gracefully on smaller screens.</p>
             </li>
             <li>
-                <p><b>Accessibility.</b> For PDF/UA compliance, enable tagging in the PDF target settings to structure text layout for screen readers. In HTML5, use semantic tags (for example, <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>) and ARIA attributes to enhance navigation, ensuring text layout supports assistive technologies.</p>
+                <p><b>Accessibility.</b> For <b>PDF/UA</b> compliance, enable tagging in the PDF target settings to structure text layout for screen readers. In <b>HTML5</b>, use semantic tags (for example, <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>) and ARIA attributes to enhance navigation, ensuring text layout supports assistive technologies.</p>
             </li>
         </ul>
         <h3>Code and Markup language</h3>
         <p>Handling code and markup in Flare requires attention to how it is authored, displayed, and rendered across outputs.</p>
         <ul>
             <li>
-                <p><b>Code snippets.</b> Use Flare’s native <code>MadCap:codeSnippet</code> element (introduced in Flare 2020) to insert formatted code with syntax highlighting. Specify the language (for example, Python, JavaScript) for accurate highlighting, and customize via CSS (for example, <code>MadCap|codeSnippet</code> styles) for font, colours, or line numbering. In HTML5, a <b>"Copy"</b> button is auto-added; ensure it’s styled for usability. For PDF, verify the snippet renders cleanly without overflow.</p>
+                <p><b>Code snippets.</b> Use Flare’s native <code>MadCap:codeSnippet</code> element (introduced in Flare 2020) to insert formatted code with syntax highlighting. Specify the language (for example, Python, JavaScript) for accurate highlighting, and customize via CSS (for example, <code>MadCap|codeSnippet</code> styles) for font, colours, or line numbering. In <b>HTML5</b>, a "Copy" button is auto-added; ensure it’s styled for usability. For <b>PDF</b>, verify the snippet renders cleanly without overflow.</p>
             </li>
             <li>
-                <p><b>Preserving inline HTML.</b> Pasting raw HTML into Flare’s XML Editor can disrupt formatting due to its reformatting behaviour. To preserve it, paste into a <code>snippetBlock</code> or edit the topic in an external text editor, then import. For example, syntax-highlighted code from tools like Pygments should reference an external CSS file rather than inline styles, as Flare’s PDF engine may not handle the latter well.</p>
+                <p><b>Preserving inline HTML.</b> Pasting raw HTML into Flare’s XML Editor can disrupt formatting due to its reformatting behaviour. To preserve it, paste into a <code>snippetBlock</code> or edit the topic in an external text editor, then import. </p>
             </li>
+        </ul>
+        <div class="example-grey">
+            <p MadCap:autonum="&lt;b&gt;Example&lt;/b&gt; &#160;&#160;"> Syntax-highlighted code from tools like Pygments should reference an external CSS file rather than inline styles, as Flare’s PDF engine may not handle the latter well.</p>
+        </div>
+        <ul>
             <li>
                 <p><b>Markdown import.</b> Flare supports importing Markdown, mapping code blocks to <code>MadCap:codeSnippet</code>. Ensure the source Markdown uses proper triple-backtick syntax (<code>```</code>) with language identifiers for seamless conversion. Post-import, tweak styles if the default highlighting doesn’t match the output needs.</p>
             </li>
@@ -100,8 +105,13 @@
         <h3><a name="General2"></a>General MadCap Flare best practices</h3>
         <ul>
             <li>
-                <p><b>Single sourcing.</b> Flare is built for single sourcing, allowing one content set to generate multiple outputs (for example, HTML5, PDF) using targets, condition tags, and variables. For example, a single topic can adapt to web or print with minimal rework.</p>
+                <p><b>Single sourcing.</b> Flare is built for single sourcing, allowing one content set to generate multiple outputs (for example, HTML5, PDF) using targets, condition tags, and variables. </p>
             </li>
+        </ul>
+        <div class="example-grey">
+            <p MadCap:autonum="&lt;b&gt;Example&lt;/b&gt; &#160;&#160;">A single topic can adapt to web or print with minimal rework.</p>
+        </div>
+        <ul>
             <li>
                 <p><b>Validation.</b> Flare supports content validation through tools like <b>Project analysis</b> (checks for broken links, unused files) and the <b>XML editor’s</b> real-time markup validation. It ensures XHTML compliance, though external tools may be needed for deeper standards checks (for example, WCAG).</p>
             </li>
