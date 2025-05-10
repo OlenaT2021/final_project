@@ -243,7 +243,7 @@ h6
 
 div.home-layout
 {
-	padding: 2% 5%;
+	padding: 1% 5% 2%;
 }
 
 div.home-section
@@ -401,17 +401,18 @@ div.quick-links *	/*Text-align center set to all elements within div.quick-links
 
 div.topic-hero
 {
-	padding: 5%;
-	background-image: url('../Images/Hero-Background.jpg');
+	background-image: url('../Images/global-home.jpg');
 	background-size: cover;
 	background-attachment: fixed;
+	padding: 5%;
 }
 
 div.topic-hero h1
 {
 	color: #ffffff;
-	font-size: 48pt;
-	text-align: center;
+	font-size: 28pt;
+	display: block;
+	text-align: right;
 }
 
 html.home-topic	/*Used on home topic to override padding set in the skin*/
@@ -768,10 +769,10 @@ div.example-grey
 	margin: 10px 180px 10px 30px;
 }
 
-div.example p
+div.example-grey p
 {
-	mc-auto-number-format: '{b}{color #000000}Example{/color}{/b}   ';
 	mc-auto-number-class: Setoff;
+	mc-auto-number-format: '{b}Example{/b}   ';
 }
 
 span.Setoff
