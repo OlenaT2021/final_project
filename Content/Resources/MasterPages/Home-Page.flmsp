@@ -11,8 +11,7 @@
                 <tbody>
                     <tr>
                         <td>
-                            <p class="footer"><MadCap:variable name="General.Created by" />
-                            </p>
+                            <p class="footer">Copyright © <MadCap:variable name="General.Created by" /></p>
                             <p class="footer"><MadCap:variable name="General.Date" />
                             </p>
                             <p class="footer-sub">Created using MadCap&#160;Flare</p>
