@@ -1,4 +1,4 @@
-/*<meta />*/
+﻿/*<meta />*/
 
 body
 {
@@ -767,7 +767,7 @@ div.example-grey
 	margin: 10px 180px 10px 30px;
 }
 
-div.example-grey p
+div.example-grey > p
 {
 	mc-auto-number-class: Setoff;
 	mc-auto-number-format: '{b}Example{/b}   ';
@@ -778,4 +778,3 @@ span.Setoff
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
-
