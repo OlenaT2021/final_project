@@ -1,1 +1,1 @@
-define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/Glossary.htm'],s:['$10','inlin','track'],p:[['$10',6],['character',1],['environment',20],['information',0],['of',0],['scalable',14],['to',16]]});
+define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/Glossary.htm'],s:['$10','inlin','track'],p:[['$10',6],['character',1],['environment',20],['information',0],['of',0],['scalability',24],['to',16]]});
