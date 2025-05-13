@@ -23,7 +23,7 @@
 	{
 		display: none;
 		background-repeat: no-repeat;
-		background-color: #303335;
+		background-color: #05091C;
 	}
 
 	/* Side Navigation Menu styles */
@@ -31,7 +31,7 @@
 	.sidenav-wrapper
 	{
 		display: none;
-		background-color: #45494c;
+		background-color: #292F42;
 	}
 
 	.sidenav-wrapper ul.menu
@@ -410,8 +410,8 @@
 
 	.title-bar-layout a.logo
 	{
-		background: transparent url('Images/digi_logo_darkgrey_1.jpg') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/digi_logo_darkgrey_1.jpg') no-repeat center center;
+		background: transparent url('Images/digi_logo_richblack.jpg') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/digi_logo_richblack.jpg') no-repeat center center;
 	}
 
 	.main-section > .outer-row
@@ -1125,7 +1125,7 @@
 
 	.sidenav-container ul ul
 	{
-		background-color: #45494c;
+		background-color: #292F42;
 	}
 
 	.sidenav-container

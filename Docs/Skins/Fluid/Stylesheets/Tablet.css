@@ -58,7 +58,7 @@
 		background-repeat: no-repeat;
 		padding-top: 15px;
 		padding-bottom: 15px;
-		background-color: #303335;
+		background-color: #05091C;
 	}
 
 	/* Topbar Menu Styles */
@@ -87,8 +87,8 @@
 		margin: 0;
 		width: 200px;
 		height: 95px;
-		background: transparent url('Images/digi_logo_darkgrey_1.jpg') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/digi_logo_darkgrey_1.jpg') no-repeat center center;
+		background: transparent url('Images/digi_logo_richblack.jpg') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/digi_logo_richblack.jpg') no-repeat center center;
 	}
 
 	.title-bar .menu-icon span

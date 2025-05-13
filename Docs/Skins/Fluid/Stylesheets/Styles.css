@@ -281,7 +281,7 @@ nav.title-bar
 	display: block;
 	padding-top: 25px;
 	padding-bottom: 25px;
-	background-color: #303335;
+	background-color: #05091C;
 }
 
 nav.title-bar .menu-icon
@@ -339,8 +339,8 @@ nav.title-bar .menu-icon
 	width: 200px;
 	height: 95px;
 	align-self: center;
-	background: transparent url('Images/digi_logo_darkgrey_1.jpg') no-repeat center center;
-	-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/digi_logo_darkgrey_1.jpg') no-repeat center center;
+	background: transparent url('Images/digi_logo_richblack.jpg') no-repeat center center;
+	-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/digi_logo_richblack.jpg') no-repeat center center;
 }
 
 .title-bar-container
@@ -543,7 +543,7 @@ html[dir='rtl'] .sidenav-layout
 	overflow: auto;
 	width: 20%;
 	display: block;
-	background-color: #45494c;
+	background-color: #292F42;
 }
 
 .sidenav-wrapper ul ul.is-accordion-submenu
@@ -1975,7 +1975,7 @@ h1#results-heading
 
 .sidenav-container ul ul
 {
-	background-color: #45494c;
+	background-color: #292F42;
 }
 
 .sidenav-container
