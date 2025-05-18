@@ -35,6 +35,9 @@
             <li>
                 <p><b>Snippets.</b> For larger reusable text blocks (for example, disclaimers, procedures), snippets allow externalized content to be inserted into multiple topics. Choose between <code>snippetText</code> (inline, no formatting preserved) and <code>snippetBlock</code> (preserves formatting) based on whether layout consistency matters across outputs. For instance, a code-heavy snippet might need <code>snippetBlock</code> to retain indentation in PDF and HTML5.</p>
             </li>
+        </ul>
+        <p><b>WARNING </b>To avoid text fragmentation, which makes translation difficult or impossible, snippets should not be used for fragments of sentences or single words; they should be applied to entire paragraphs or sentences.</p>
+        <ul>
             <li>
                 <p><b>Condition tags.</b> Externalize content by applying conditions to include or exclude text based on the target output. For example, tag a section as<b> "WebOnly"</b> for HTML5 or<b> "PrintOnly"</b> for PDF. This ensures format-specific text is externalized and managed efficiently without duplicating files.</p>
             </li>
