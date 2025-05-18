@@ -241,16 +241,6 @@
       Link="">Anything a user may interact with to use a digital product or service. This includes everything from screens and touchscreens, keyboards, sounds, and even lights.</Definition>
   </GlossaryEntry>
   <GlossaryEntry
-    glossTerm="I18n-L10n-glossary.Term28"
-    Stem=""
-    IgnoreCase="true">
-    <Terms>
-      <Term>versus (vs)</Term>
-    </Terms>
-    <Definition
-      Link="">Against, in contrast to or as the alternative of something.</Definition>
-  </GlossaryEntry>
-  <GlossaryEntry
     glossTerm="I18n-L10n-glossary.Term29"
     Stem=""
     IgnoreCase="true">
@@ -269,5 +259,15 @@
     </Terms>
     <Definition
       Link="">A set of recommendations for making web content more accessible developed by W3C's WAI, primarily for people with disabilities — but also for all user agents, including some highly limited devices or services, such as digital assistants.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term0"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Computer-assisted translation (CAT) tools</Term>
+    </Terms>
+    <Definition
+      Link="">Are software programs that assist human translators in transferring the meaning of text between languages more quickly and efficiently. More specifically, CAT tools provide translators with an interface for submitting, editing, managing, and storing multilingual content in one place.</Definition>
   </GlossaryEntry>
 </CatapultGlossary>
