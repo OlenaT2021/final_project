@@ -1,142 +1,159 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
-        <link href="../Resources/TableStylesheets/Color-with-Subsections.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Documentation content quality assurance</title>
+        <link href="../Resources/TableStylesheets/Color-with-Subsections.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Testing and QA for localized documentation</title>
     </head>
     <body>
-        <h2>Documentation content quality assurance</h2>
-        <p>The content quality assurance (QA) process for localized documentation is a structured, multi-step approach that ensures translated content is accurate, consistent, culturally appropriate, and functionally correct within the software environment. It’s about validating both the linguistic quality and the technical integration of localized content before it's released.</p>
-        <p>A typical end-to-end QA process for localized documentation is as follows:</p>
-        <h3>Preparation and pre-QA planning</h3>
+        <h2>Testing and QA for localized documentation</h2>
+        <p>Testing and quality assurance (QA) are critical steps in the localization process, ensuring that translated documentation is accurate, consistent, culturally appropriate, and fully functional. This phase follows internationalization, localization, and translation, serving as a safeguard before localized content reaches end users. It helps preserve the original intent, enhance user satisfaction, and maintain brand consistency.</p>
+        <h3>Objectives of localization QA</h3>
+        <p>The primary objectives of testing and QA in localization include:</p>
         <ul>
             <li>
-                <p><b>Define quality standards and metrics.</b> Establish expectations for style, tone, terminology, and error tolerance.</p>
-            </li>
-            <li>
-                <p><b>Develop QA checklists.</b> Tailor checklists for each language pair or content type (for example, UI, help docs, release notes).</p>
-            </li>
-            <li>
-                <p><b>Share style guides and glossaries.</b> Ensure translators and reviewers are aligned on brand voice and terminology.</p>
-            </li>
-            <li>
-                <p><b>Create a review plan.</b> Identify reviewers (in-market or in-house), responsibilities, and timelines.</p>
+                <p><b>Linguistic accuracy.</b> Confirm that translations are grammatically correct, semantically faithful to the source, and appropriate in tone and style.</p>
             </li>
         </ul>
-        <h3>Automated quality checks</h3>
-        <p>Automated tools (Xbench, QA Distiller, MemoQ, Trados) help to catch basic errors before human review. This helps streamline QA and reduce reviewer fatigue.</p>
         <ul>
             <li>
-                <p><b>Spelling and grammar (language-specific) tools.</b> Automated systems that check text according to the linguistic rules of each target language, rather than relying on a generic dictionary or universal grammar model.</p>
-            </li>
-            <li>
-                <p><b>Terminology checks.</b> Match against a controlled vocabulary or glossary.</p>
-            </li>
-            <li>
-                <p><b>Consistency checks.</b> Flag inconsistencies in repeated phrases or UI elements.</p>
-            </li>
-            <li>
-                <p><b>Formatting issues.</b> Tags, placeholders, punctuation, and spacing.</p>
+                <p><b>Cultural appropriateness.</b> Ensure that content resonates with the target audience’s norms and avoids cultural missteps.</p>
             </li>
         </ul>
-        <h3>Linguistic review (human QA)</h3>
-        <p>A professional reviewer (native speaker, SME, or in-country reviewer) checks:</p>
         <ul>
             <li>
-                <p><b>Accuracy.</b> Faithful, complete translation of source content.</p>
-            </li>
-            <li>
-                <p><b>Fluency and readability.</b> Natural, idiomatic expression.</p>
-            </li>
-            <li>
-                <p><b>Cultural appropriateness.</b> No offensive, awkward, or irrelevant content.</p>
-            </li>
-            <li>
-                <p><b>Terminology consistency.</b> Use of approved glossary and domain-specific terms.</p>
-            </li>
-            <li>
-                <p><b>Tone and voice.</b> Matches brand and audience expectations.</p>
+                <p><b>Functional integrity.</b> Verify that localized content integrates seamlessly into the product’s final environment (UI, help systems, manuals).</p>
             </li>
         </ul>
-        <p>This may involve multiple rounds (for example, translator &gt; editor &gt; reviewer).</p>
-        <h3>Contextual and functional review</h3>
-        <p>Once content is placed back into the product or help system, validate that it displays and functions as intended.</p>
         <ul>
             <li>
-                <p><b>Contextual review.</b> Is the content appropriate in context (for example, UI screen, help panel, embedded tooltip)?</p>
+                <p><b>Consistency.</b> Enforce consistent terminology, style, and branding through glossaries and style guides.</p>
             </li>
             <li>
-                <p><b>Layout and formatting.</b> Does the content fit the design (no truncation, overlaps, broken layouts)?</p>
+                <p><b>User experience.</b> Evaluate clarity, usability, and accessibility for end users.</p>
             </li>
             <li>
-                <p><b>Hyperlinks, variables, and references.</b> Are they correct and localized?</p>
-            </li>
-            <li>
-                <p><b>Cross-platform checks.</b> Consistency across devices, operating systems, or help platforms.</p>
+                <p><b>Issue detection.</b> Catch and resolve linguistic, technical, or cultural errors before release.</p>
             </li>
         </ul>
-        <h3>In-market or end-user review (optional but valuable)</h3>
-        <p>Get feedback from people in the target market—ideally, the intended users. This might include:</p>
-        <ul>
+        <h3>QA process overview</h3>
+        <p>The localization QA process typically includes:</p>
+        <ol>
             <li>
-                <p>Internal staff from that locale.</p>
+                <p><b>Preparation and planning</b>
+                </p>
+            </li>
+            <ul>
+                <li>
+                    <p>Define quality metrics (e.g., error rates, tone consistency).</p>
+                </li>
+                <li>
+                    <p>Share glossaries, style guides, and checklists with translators and reviewers.</p>
+                </li>
+                <li>
+                    <p>Create a review schedule and assign roles.</p>
+                </li>
+            </ul>
+            <li>
+                <p><b>Automated checks</b>
+                </p>
+                <ul>
+                    <li>
+                        <p>Use tools like Xbench, QA Distiller, Trados, or MemoQ to:</p>
+                        <ul style="list-style-type: circle;">
+                            <li>
+                                <p>Flag spelling, grammar, and punctuation errors.</p>
+                            </li>
+                            <li>
+                                <p>Check terminology consistency against glossaries.</p>
+                            </li>
+                            <li>
+                                <p>Identify formatting issues (tags, placeholders, spacing).</p>
+                            </li>
+                            <li>
+                                <p>Detect untranslated strings or misused UI elements.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </li>
             <li>
-                <p>Customer support teams.</p>
+                <p><b>Human review</b>
+                </p>
+                <ul>
+                    <li>
+                        <p>Conduct in-depth linguistic and technical reviews:</p>
+                        <ul style="list-style-type: circle;">
+                            <li>
+                                <p>Native-speaking reviewers ensure idiomatic expression and accuracy.</p>
+                            </li>
+                            <li>
+                                <p>SMEs verify technical content.</p>
+                            </li>
+                            <li>
+                                <p>Cultural reviewers assess contextual and cultural suitability.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </li>
             <li>
-                <p>Beta testers or product champions.</p>
-            </li>
-        </ul>
-        <p>They can offer insights into cultural nuances, expectations, and edge cases that formal reviews might miss.</p>
-        <h3>Bug tracking and issue resolution</h3>
-        <ul>
-            <li>
-                <p>Track QA issues using tools like Jira, GitHub, or TMS-integrated bug trackers.</p>
-            </li>
-            <li>
-                <p>Categorize issues (for example, linguistic, functional, technical).</p>
-            </li>
-            <li>
-                <p>Assign and resolve: translators or developers fix issues, reviewers verify resolutions.</p>
-            </li>
-            <li>
-                <p>Ensure that recurring issues are addressed systemically (for example, update the glossary, fix source content, improve style guides).</p>
-            </li>
-        </ul>
-        <h3>Final validation and sign-off</h3>
-        <p>Before release:</p>
-        <ul>
-            <li>
-                <p>Re-run automated QA.</p>
+                <p><b>Contextual and functional testing</b>
+                </p>
+                <ul>
+                    <li>
+                        <p>Validate content within its final format (UI, help panels, apps).</p>
+                    </li>
+                    <li>
+                        <p>Test for layout integrity, navigation, and localized links.</p>
+                    </li>
+                    <li>
+                        <p>Check for encoding issues or text overflow/truncation.</p>
+                    </li>
+                </ul>
             </li>
             <li>
-                <p>Confirm all issues are resolved.</p>
+                <p><b>In-market or end-user feedback</b> (<i>optional but valuable</i>)</p>
+                <ul>
+                    <li>
+                        <p>Gather insights from target market users, support staff, or beta testers.</p>
+                    </li>
+                    <li>
+                        <p>Identify practical usability or comprehension issues.</p>
+                    </li>
+                </ul>
             </li>
             <li>
-                <p>Conduct a final walkthrough of the localized content.</p>
+                <p><b>Bug tracking and resolution</b>
+                </p>
+                <ul>
+                    <li>
+                        <p>Use systems like Jira or TMS-integrated tools to log and categorize issues.</p>
+                    </li>
+                    <li>
+                        <p>Collaborate with translators and developers to resolve errors.</p>
+                    </li>
+                    <li>
+                        <p>Track recurring problems and refine workflows, glossaries, or style guides accordingly.</p>
+                    </li>
+                </ul>
             </li>
             <li>
-                <p>Document the review outcomes and sign-off from relevant stakeholders (for example, language leads, product owners).</p>
+                <p><b>Iterative revision</b>
+                </p>
+                <ul>
+                    <li>
+                        <p>Apply reviewer feedback and retest as needed.</p>
+                    </li>
+                    <li>
+                        <p>Repeat cycles until all quality goals are met.</p>
+                    </li>
+                </ul>
             </li>
-        </ul>
-        <h3>Post-release feedback loop</h3>
-        <p>After the content is live:</p>
-        <ul>
-            <li>
-                <p>Monitor feedback channels (support tickets, user forums, usage analytics).</p>
-            </li>
-            <li>
-                <p>Collect and review user feedback to identify possible oversights.</p>
-            </li>
-            <li>
-                <p>Feed learnings back into the QA process to improve future releases.</p>
-            </li>
-        </ul>
+        </ol>
         <h3>Content quality assurance (QA) checklist</h3>
         <table style="width: 100%;mc-table-style: url('../Resources/TableStylesheets/Color-with-Subsections.css');" class="TableStyle-Color-with-Subsections" cellspacing="24">
-            <col class="TableStyle-Color-with-Subsections-Column-Column1" />
-            <col class="TableStyle-Color-with-Subsections-Column-Column1" />
-            <col class="TableStyle-Color-with-Subsections-Column-Column1" />
+            <col class="TableStyle-Color-with-Subsections-Column-Column1" style="width: 276px;" />
+            <col class="TableStyle-Color-with-Subsections-Column-Column1" style="width: 444px;" />
+            <col class="TableStyle-Color-with-Subsections-Column-Column1" style="width: 189px;" />
             <col class="TableStyle-Color-with-Subsections-Column-Column1" />
             <thead>
                 <tr class="TableStyle-Color-with-Subsections-Head-Header1">
