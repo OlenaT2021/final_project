@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="utf-8" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Validation of readiness</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Testing and QA for localized documentation</title>
         <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
@@ -115,123 +115,156 @@
                                         </div>
                                     </div>
                                     <div role="main" id="mc-main-content">
-                                        <h2>Validation of readiness</h2>
-                                        <p>The <b>validation of readiness</b> process ensures that <b>localized documentation</b> is complete, accurate, functional, and approved for release. It’s the final gate before content is delivered to users—whether internally or publicly. It ensures the localized documentation is truly ready for its audience—not just technically “done.”  While it can vary depending on the workflow, tools, and teams, the process generally follows these key steps:</p>
-                                        <h3>Check completion and coverage</h3>
+                                        <h2>Testing and QA for localized documentation</h2>
+                                        <p>Testing and quality assurance (QA) are critical steps in the localization process, ensuring that translated documentation is accurate, consistent, culturally appropriate, and fully functional. This phase follows internationalization, localization, and translation, serving as a safeguard before localized content reaches end users. It helps preserve the original intent, enhance user satisfaction, and maintain brand consistency.</p>
+                                        <h3>Objectives of localization QA</h3>
+                                        <p>The primary objectives of testing and QA in localization include:</p>
                                         <ul>
                                             <li>
-                                                <p>Confirm all content is translated and reviewed.</p>
-                                            </li>
-                                            <li>
-                                                <p>Ensure no strings or sections are missing in any language.</p>
-                                            </li>
-                                            <li>
-                                                <p>Verify that source updates have been correctly reflected in localized versions.</p>
-                                            </li>
-                                        </ul>
-                                        <h3>Run final QA checks (automated + manual)</h3>
-                                        <ul>
-                                            <li>
-                                                <p><b>Automated QA tools.</b> Re-run spelling, grammar, placeholder integrity, tag structure, and terminology checks.</p>
-                                            </li>
-                                            <li>
-                                                <p><b>Manual review.</b> Perform a final linguistic and functional spot-check, especially for high-impact or user-facing content.</p>
-                                            </li>
-                                        </ul>
-                                        <h3>Context and formatting review</h3>
-                                        <p>Ensure localized content displays correctly in its final environment:</p>
-                                        <ul>
-                                            <li>
-                                                <p>UI layout and text fit (no truncation, overflow, or misalignment).</p>
-                                            </li>
-                                            <li>
-                                                <p>Correct formatting of dates, numbers, currencies, etc.</p>
-                                            </li>
-                                            <li>
-                                                <p>Valid hyperlinks, cross-references, and visuals.</p>
-                                            </li>
-                                        </ul>
-                                        <h3>Stakeholder review and sign-off</h3>
-                                        <ul>
-                                            <li>
-                                                <p>Conduct a final review with key stakeholders, such as:</p>
-                                                <ul style="list-style-type: circle;">
-                                                    <li>
-                                                        <p>In-market reviewers or language leads.</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Product managers.</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Technical writers or localization managers.</p>
-                                                    </li>
-                                                </ul>
+                                                <p><b>Linguistic accuracy.</b> Confirm that translations are grammatically correct, semantically faithful to the source, and appropriate in tone and style.</p>
                                             </li>
                                         </ul>
                                         <ul>
                                             <li>
-                                                <p>Use a checklist or scorecard to guide the review and record sign-off decisions.</p>
+                                                <p><b>Cultural appropriateness.</b> Ensure that content resonates with the target audience’s norms and avoids cultural missteps.</p>
                                             </li>
                                         </ul>
-                                        <h3>Verify packaging and delivery</h3>
-                                        <p>Confirm that localized content is packaged and deployed correctly:</p>
                                         <ul>
                                             <li>
-                                                <p>Files are named and placed correctly in the system or repo.</p>
-                                            </li>
-                                            <li>
-                                                <p>File encoding is preserved (especially for non-Latin scripts).</p>
-                                            </li>
-                                            <li>
-                                                <p>Localized content is linked to the correct product build or platform.</p>
+                                                <p><b>Functional integrity.</b> Verify that localized content integrates seamlessly into the product’s final environment (UI, help systems, manuals).</p>
                                             </li>
                                         </ul>
-                                        <h3>Document the validation outcome</h3>
                                         <ul>
                                             <li>
-                                                <p>Record:</p>
-                                                <ul style="list-style-type: circle;">
+                                                <p><b>Consistency.</b> Enforce consistent terminology, style, and branding through glossaries and style guides.</p>
+                                            </li>
+                                            <li>
+                                                <p><b>User experience.</b> Evaluate clarity, usability, and accessibility for end users.</p>
+                                            </li>
+                                            <li>
+                                                <p><b>Issue detection.</b> Catch and resolve linguistic, technical, or cultural errors before release.</p>
+                                            </li>
+                                        </ul>
+                                        <h3>QA process overview</h3>
+                                        <p>The localization QA process typically includes:</p>
+                                        <ol>
+                                            <li value="1">
+                                                <p><b>Preparation and planning</b>
+                                                </p>
+                                            </li>
+                                            <ul>
+                                                <li>
+                                                    <p>Define quality metrics (e.g., error rates, tone consistency).</p>
+                                                </li>
+                                                <li>
+                                                    <p>Share glossaries, style guides, and checklists with translators and reviewers.</p>
+                                                </li>
+                                                <li>
+                                                    <p>Create a review schedule and assign roles.</p>
+                                                </li>
+                                            </ul>
+                                            <li value="2">
+                                                <p><b>Automated checks</b>
+                                                </p>
+                                                <ul>
                                                     <li>
-                                                        <p>Who signed off on what.</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Any known issues deferred or accepted as-is.</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Lessons learned or updates needed in style guides, glossaries, etc.</p>
+                                                        <p>Use tools like Xbench, QA Distiller, Trados, or MemoQ to:</p>
+                                                        <ul style="list-style-type: circle;">
+                                                            <li>
+                                                                <p>Flag spelling, grammar, and punctuation errors.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Check terminology consistency against glossaries.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Identify formatting issues (tags, placeholders, spacing).</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Detect untranslated strings or misused UI elements.</p>
+                                                            </li>
+                                                        </ul>
                                                     </li>
                                                 </ul>
                                             </li>
-                                        </ul>
-                                        <ul>
-                                            <li>
-                                                <p>Store validation checklists, reports, and sign-off records for audit or reference.</p>
-                                            </li>
-                                        </ul>
-                                        <h3>Post-release monitoring (optional but recommended)</h3>
-                                        <ul>
-                                            <li>
-                                                <p>After release, keep an eye out for:</p>
-                                                <ul style="list-style-type: circle;">
+                                            <li value="3">
+                                                <p><b>Human review</b>
+                                                </p>
+                                                <ul>
                                                     <li>
-                                                        <p>User feedback or support tickets in localized markets.</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Reports of display, accuracy, or comprehension issues.</p>
+                                                        <p>Conduct in-depth linguistic and technical reviews:</p>
+                                                        <ul style="list-style-type: circle;">
+                                                            <li>
+                                                                <p>Native-speaking reviewers ensure idiomatic expression and accuracy.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>SMEs verify technical content.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Cultural reviewers assess contextual and cultural suitability.</p>
+                                                            </li>
+                                                        </ul>
                                                     </li>
                                                 </ul>
                                             </li>
-                                        </ul>
-                                        <ul>
-                                            <li>
-                                                <p>Feed this information back into your localization and QA processes.</p>
+                                            <li value="4">
+                                                <p><b>Contextual and functional testing</b>
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        <p>Validate content within its final format (UI, help panels, apps).</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Test for layout integrity, navigation, and localized links.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Check for encoding issues or text overflow/truncation.</p>
+                                                    </li>
+                                                </ul>
                                             </li>
-                                        </ul>
-                                        <h3>Validation of readiness checklist for localized documentation</h3>
+                                            <li value="5">
+                                                <p><b>In-market or end-user feedback</b> (<i>optional but valuable</i>)</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>Gather insights from target market users, support staff, or beta testers.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Identify practical usability or comprehension issues.</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li value="6">
+                                                <p><b>Bug tracking and resolution</b>
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        <p>Use systems like Jira or TMS-integrated tools to log and categorize issues.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Collaborate with translators and developers to resolve errors.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Track recurring problems and refine workflows, glossaries, or style guides accordingly.</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li value="7">
+                                                <p><b>Iterative revision</b>
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        <p>Apply reviewer feedback and retest as needed.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Repeat cycles until all quality goals are met.</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                        <h3>Content quality assurance (QA) checklist</h3>
                                         <table style="width: 100%;mc-table-style: url('../Resources/TableStylesheets/Color-with-Subsections.css');" class="TableStyle-Color-with-Subsections" cellspacing="24">
-                                            <col class="TableStyle-Color-with-Subsections-Column-Column1" style="width: 379px;" />
-                                            <col class="TableStyle-Color-with-Subsections-Column-Column1" />
-                                            <col class="TableStyle-Color-with-Subsections-Column-Column1" />
+                                            <col class="TableStyle-Color-with-Subsections-Column-Column1" style="width: 276px;" />
+                                            <col class="TableStyle-Color-with-Subsections-Column-Column1" style="width: 444px;" />
+                                            <col class="TableStyle-Color-with-Subsections-Column-Column1" style="width: 189px;" />
                                             <col class="TableStyle-Color-with-Subsections-Column-Column1" />
                                             <thead>
                                                 <tr class="TableStyle-Color-with-Subsections-Head-Header1">
@@ -243,146 +276,208 @@
                                             </thead>
                                             <tbody>
                                                 <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel"><b>Completion and coverage</b>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel"><b>Language quality</b>
                                                     </td>
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">All expected content is translated</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">No spelling errors (locale-specific)</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
                                                 </tr>
                                                 <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">All sections/pages are present</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Grammar is accurate and natural</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
                                                 </tr>
                                                 <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">No untranslated or placeholder text remains</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Punctuation is consistent and correct</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
                                                 </tr>
                                                 <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Source updates are applied in all locales</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Sentence structure is clear and fluent</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
                                                 </tr>
                                                 <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel"><b>QA checks</b>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Style aligns with brand/tone guidelines</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
+                                                </tr>
+                                                <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">No literal or awkward translations</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
+                                                </tr>
+                                                <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel"><b>Terminology and consistency</b>
                                                     </td>
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Automated spellcheck and grammar check passed</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Terminology follows approved glossary</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
                                                 </tr>
                                                 <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Terminology consistency validated</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Consistent use of product names and UI terms</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
                                                 </tr>
                                                 <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Placeholder and tag structure verified</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Consistent voice, tone, and structure</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
                                                 </tr>
                                                 <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Manual linguistic spot-check completed</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Abbreviations and acronyms are explained or localized</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
                                                 </tr>
                                                 <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel"><b>Context and formatting</b>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Capitalization and hyphenation are consistent</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
+                                                </tr>
+                                                <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel"><b>Structural and formatting checks</b>
                                                     </td>
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Content renders correctly in platform/product</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Headings follow proper hierarchy and style</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
                                                 </tr>
                                                 <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">No text truncation or layout issues</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Lists, tables, and code blocks are correctly formatted</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
                                                 </tr>
                                                 <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Correct formatting for dates, numbers, units</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Images and callouts are relevant and labeled properly</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
                                                 </tr>
                                                 <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Images, links, and cross-references are correct</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Cross-references, links, and footnotes are correct</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
                                                 </tr>
                                                 <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel"><b>Stakeholder review and sign-off</b>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Page layout is preserved (line breaks, spacing, etc.)</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
+                                                </tr>
+                                                <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel"><b>Technical and functional accuracy</b>
                                                     </td>
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Language lead/in-market reviewer approved</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">No broken links (internal/external)</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
                                                 </tr>
                                                 <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Product owner or content lead approved</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Placeholders and variables display correctly</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
                                                 </tr>
                                                 <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">No critical issues remain unresolved</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Units, dates, times, and currencies are locale-appropriate</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
                                                 </tr>
                                                 <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel"><b>Packaging and delivery</b>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Encoding and character display are correct</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
+                                                </tr>
+                                                <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">File naming conventions and formats are respected</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
+                                                </tr>
+                                                <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel"><b>Alignment with source content</b>
                                                     </td>
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Files are correctly named and encoded</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Translations match the intent of the source</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
                                                 </tr>
                                                 <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Final files are correctly placed in repo or CMS</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Updates to source are reflected in localized version</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
                                                 </tr>
                                                 <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Build or integration test passed (if applicable)</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Content is complete—no missing or duplicate sections</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
                                                 </tr>
                                                 <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel"><b>Documentation and handover</b>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel"><b>Readability and user experience</b>
                                                     </td>
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Readiness checklist archived</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Text is easy to scan (headings, bullets, bolding)</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
                                                 </tr>
                                                 <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Sign-off log completed</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Important info is highlighted or structured for clarity</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
                                                 </tr>
                                                 <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Known issues (if any) documented and accepted</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Language level is appropriate for the audience</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
                                                 </tr>
                                                 <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel"><b>Post-release monitoring</b> <i>(optional)</i></td>
-                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Feedback channel for localized content established</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Visual flow supports comprehension (especially RTL/CJK)</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
+                                                </tr>
+                                                <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel"><b>QA tools and testing</b>
+                                                    </td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Automated QA checks passed (spellcheck, tags, etc.)</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
+                                                </tr>
+                                                <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">In-context review or screenshot validation done</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
+                                                </tr>
+                                                <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Linguist or reviewer feedback applied</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
+                                                </tr>
+                                                <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel"><b>Final sign-off</b>
+                                                    </td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">Reviewed by language lead or in-country reviewer</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyE-Column1-SecondLevel">&#160;</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyD-Column1-SecondLevel">&#160;</td>
                                                 </tr>
                                                 <tr class="TableStyle-Color-with-Subsections-Body-SecondLevel">
                                                     <td class="TableStyle-Color-with-Subsections-BodyB-Column1-SecondLevel">&#160;</td>
-                                                    <td class="TableStyle-Color-with-Subsections-BodyB-Column1-SecondLevel">Plan in place to act on user feedback</td>
+                                                    <td class="TableStyle-Color-with-Subsections-BodyB-Column1-SecondLevel">Final QA approval documented</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyB-Column1-SecondLevel">&#160;</td>
                                                     <td class="TableStyle-Color-with-Subsections-BodyA-Column1-SecondLevel">&#160;</td>
                                                 </tr>

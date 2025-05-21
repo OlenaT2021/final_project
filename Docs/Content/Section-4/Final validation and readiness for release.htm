@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Side_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Side_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="utf-8" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Post-localization quality control processes</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Final validation and readiness for release</title>
         <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
@@ -114,9 +114,124 @@
                                         </div>
                                     </div>
                                     <div role="main" id="mc-main-content">
-                                        <h2>Post-localization quality control processes</h2>
-                                        <p>Post-localization quality control is the final stage in the localization workflow, ensuring that translated documentation is ready for release. The quality control phase verifies that this localized content meets all functional, linguistic, and formatting standards before it reaches end users. This process builds on the steps outlined in the <a href="Testing and QA for localized documentation.htm">Testing and QA for localized documentation</a> phase, which involves comprehensive linguistic, cultural, and functional checks to ensure translation accuracy and usability.</p>
-                                        <p>The post-localization quality control stage also includes a final review, which confirms that all required corrections have been made, content is complete, and documentation is properly integrated into the product environment. It serves as a prerequisite to the <a href="Final validation and readiness for release.htm">Final validation and readiness for release</a> step, where key stakeholders sign off on content, packaging is verified, and materials are prepared for deployment. By identifying and resolving any remaining issues—whether technical, linguistic, or contextual—post-localization quality control helps maintain content consistency, reduces the risk of user-reported errors, and ensures a polished, professional end product.</p>
+                                        <h2>Final validation and readiness for release</h2>
+                                        <p>Once testing and QA are complete, the validation of the readiness phase ensures the documentation is fully prepared for release. This is the final gate before deployment, confirming the completeness, correctness, and approval of localized content.</p>
+                                        <h3>Readiness validation checklist</h3>
+                                        <ol>
+                                            <li value="1">
+                                                <p><b>Completion and coverage checks</b>
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        <p>Confirm that all required content is fully translated and reviewed.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Verify no missing strings or outdated source content in localized versions.</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li value="2">
+                                                <p><b>Final QA pass (automated + manual)</b>
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        <p>Re-run automated tools to check spelling, grammar, tags, placeholders, and terminology.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Perform a final manual spot-check, focusing on high-visibility or user-critical areas.</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li value="3">
+                                                <p><b>Contextual display and functionality</b>
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        <p>Check how the content appears in its final environment:</p>
+                                                        <ul style="list-style-type: circle;">
+                                                            <li>
+                                                                <p>Text fit (no truncation, overflow).</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Proper formatting of dates, currencies, and numbers.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Working links, accurate references, and correct visuals.</p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li value="4">
+                                                <p><b>Stakeholder review and sign-off</b>
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        <p>Conduct a last round of review with language leads, product owners, or localization managers.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Use a checklist or scorecard to guide and document decisions.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Capture sign-off from relevant stakeholders.</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li value="5">
+                                                <p><b>Packaging and deployment verification</b>
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        <p>Ensure:</p>
+                                                        <ul style="list-style-type: circle;">
+                                                            <li>
+                                                                <p>Files are properly named and placed in systems or repositories.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Encoding is preserved for non-Latin scripts.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Localized content is correctly linked to product builds or platforms.</p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li value="6">
+                                                <p><b>Documentation and reporting</b>
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        <p>Record:</p>
+                                                        <ul style="list-style-type: circle;">
+                                                            <li>
+                                                                <p>Who signed off and when.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Any deferred issues and their rationale.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Lessons learned for future releases.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Updated guidelines, if applicable.</p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li value="7">
+                                                <p><b>Post-release monitoring</b> (<i>recommended</i>)</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>Watch for user feedback, support tickets, or usage patterns in localized markets.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Log post-release issues and feed them back into the QA and localization process for continuous improvement.</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
