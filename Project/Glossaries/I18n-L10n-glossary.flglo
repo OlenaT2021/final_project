@@ -270,4 +270,14 @@
     <Definition
       Link="">Are software programs that assist human translators in transferring the meaning of text between languages more quickly and efficiently. More specifically, CAT tools provide translators with an interface for submitting, editing, managing, and storing multilingual content in one place.</Definition>
   </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="I18n-L10n-glossary.Term18"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Unicode</Term>
+    </Terms>
+    <Definition
+      Link="">An international character encoding standard that provides a unique number for every character across languages and scripts, making almost all characters accessible across platforms, programs, and devices.</Definition>
+  </GlossaryEntry>
 </CatapultGlossary>

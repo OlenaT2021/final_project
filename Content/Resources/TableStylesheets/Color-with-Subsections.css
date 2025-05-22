@@ -19,11 +19,11 @@ mcTableStyle
 	border-bottom-width: 0px;
 	border-bottom-color: #000000;
 	max-id: 4;
-	border-spacing-y: 24;
-	cell-padding-left: 5px;
+	border-spacing-y: 20;
+	cell-padding-left: 10px;
 	cell-padding-right: 5px;
-	cell-padding-top: 5px;
-	cell-padding-bottom: 5px;
+	cell-padding-top: 8px;
+	cell-padding-bottom: 8px;
 	border-spacing-x: 6;
 }
 
@@ -63,14 +63,15 @@ mcTableBodyStyle
 	id: 1;
 	background-color: #d0d3d5;
 	cell-padding-left: 10px;
-	cell-padding-right: 10px;
-	cell-padding-top: 10px;
-	cell-padding-bottom: 10px;
-	cell-content-style-tag: p;
+	cell-padding-right: 5px;
+	cell-padding-top: 8px;
+	cell-padding-bottom: 8px;
+	cell-content-style-tag: none;
 	cell-content-style-class: table-text;
-	vertical-align: top;
-	type: Manual;
+	vertical-align: middle;
+	type: Automatic;
 	size: 0;
+	text-align: left;
 }
 
 mcTableBodyStyle
@@ -84,9 +85,9 @@ mcTableBodyStyle
 	separator-color: #ffffff;
 	cell-content-style-class: table-text;
 	cell-padding-left: 10px;
-	cell-padding-right: 10px;
-	cell-padding-top: 10px;
-	cell-padding-bottom: 10px;
+	cell-padding-right: 5px;
+	cell-padding-top: 8px;
+	cell-padding-bottom: 8px;
 	vertical-align: top;
 }
 
@@ -108,7 +109,7 @@ mcTableBodyStyle
 	border-bottom-style: solid;
 	border-bottom-color: #000000;
 	border-bottom-width: 0px;
-	border-spacing: 6px 24px;
+	border-spacing: 6px 20px;
 }
 
 .TableStyle-Color-with-Subsections-Column-Column1
@@ -276,10 +277,10 @@ mcTableBodyStyle
 
 .TableStyle-Color-with-Subsections-FootI-Column1-
 {
-	padding-left: 5px;
+	padding-left: 10px;
 	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 .TableStyle-Color-with-Subsections-FootI-Column1- p
@@ -289,10 +290,10 @@ mcTableBodyStyle
 
 .TableStyle-Color-with-Subsections-FootE-Column1-
 {
-	padding-left: 5px;
+	padding-left: 10px;
 	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 	border-right-width: 2px;
 	border-right-color: #ffffff;
 	border-right-style: solid;
@@ -305,10 +306,10 @@ mcTableBodyStyle
 
 .TableStyle-Color-with-Subsections-FootF-Column1-
 {
-	padding-left: 5px;
+	padding-left: 10px;
 	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 .TableStyle-Color-with-Subsections-FootF-Column1- p
@@ -318,10 +319,10 @@ mcTableBodyStyle
 
 .TableStyle-Color-with-Subsections-FootH-Column1-
 {
-	padding-left: 5px;
+	padding-left: 10px;
 	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 	border-right-width: 2px;
 	border-right-color: #ffffff;
 	border-right-style: solid;
@@ -334,10 +335,10 @@ mcTableBodyStyle
 
 .TableStyle-Color-with-Subsections-FootD-Column1-
 {
-	padding-left: 5px;
+	padding-left: 10px;
 	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 .TableStyle-Color-with-Subsections-FootD-Column1- p
@@ -347,10 +348,10 @@ mcTableBodyStyle
 
 .TableStyle-Color-with-Subsections-FootC-Column1-
 {
-	padding-left: 5px;
+	padding-left: 10px;
 	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 .TableStyle-Color-with-Subsections-FootC-Column1- p
@@ -360,10 +361,10 @@ mcTableBodyStyle
 
 .TableStyle-Color-with-Subsections-FootB-Column1-
 {
-	padding-left: 5px;
+	padding-left: 10px;
 	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 	border-right-width: 2px;
 	border-right-color: #ffffff;
 	border-right-style: solid;
@@ -376,10 +377,10 @@ mcTableBodyStyle
 
 .TableStyle-Color-with-Subsections-FootA-Column1-
 {
-	padding-left: 5px;
+	padding-left: 10px;
 	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 .TableStyle-Color-with-Subsections-FootA-Column1- p
@@ -389,10 +390,10 @@ mcTableBodyStyle
 
 .TableStyle-Color-with-Subsections-FootG-Column1-
 {
-	padding-left: 5px;
+	padding-left: 10px;
 	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 .TableStyle-Color-with-Subsections-FootG-Column1- p
@@ -407,12 +408,13 @@ mcTableBodyStyle
 
 .TableStyle-Color-with-Subsections-BodyI-Column1-FirstLevel
 {
-	vertical-align: top;
+	text-align: left;
+	vertical-align: middle;
 	background-color: #d0d3d5;
 	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 .TableStyle-Color-with-Subsections-BodyI-Column1-FirstLevel p
@@ -422,12 +424,13 @@ mcTableBodyStyle
 
 .TableStyle-Color-with-Subsections-BodyE-Column1-FirstLevel
 {
-	vertical-align: top;
+	text-align: left;
+	vertical-align: middle;
 	background-color: #d0d3d5;
 	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 	border-bottom-width: 2px;
 	border-bottom-color: #ffffff;
 	border-bottom-style: solid;
@@ -443,12 +446,13 @@ mcTableBodyStyle
 
 .TableStyle-Color-with-Subsections-BodyF-Column1-FirstLevel
 {
-	vertical-align: top;
+	text-align: left;
+	vertical-align: middle;
 	background-color: #d0d3d5;
 	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 	border-bottom-width: 2px;
 	border-bottom-color: #ffffff;
 	border-bottom-style: solid;
@@ -461,12 +465,13 @@ mcTableBodyStyle
 
 .TableStyle-Color-with-Subsections-BodyH-Column1-FirstLevel
 {
-	vertical-align: top;
+	text-align: left;
+	vertical-align: middle;
 	background-color: #d0d3d5;
 	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 	border-right-width: 2px;
 	border-right-color: #ffffff;
 	border-right-style: solid;
@@ -479,12 +484,13 @@ mcTableBodyStyle
 
 .TableStyle-Color-with-Subsections-BodyD-Column1-FirstLevel
 {
-	vertical-align: top;
+	text-align: left;
+	vertical-align: middle;
 	background-color: #d0d3d5;
 	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 	border-bottom-width: 2px;
 	border-bottom-color: #ffffff;
 	border-bottom-style: solid;
@@ -497,12 +503,13 @@ mcTableBodyStyle
 
 .TableStyle-Color-with-Subsections-BodyC-Column1-FirstLevel
 {
-	vertical-align: top;
+	text-align: left;
+	vertical-align: middle;
 	background-color: #d0d3d5;
 	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 .TableStyle-Color-with-Subsections-BodyC-Column1-FirstLevel p
@@ -512,12 +519,13 @@ mcTableBodyStyle
 
 .TableStyle-Color-with-Subsections-BodyB-Column1-FirstLevel
 {
-	vertical-align: top;
+	text-align: left;
+	vertical-align: middle;
 	background-color: #d0d3d5;
 	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 	border-right-width: 2px;
 	border-right-color: #ffffff;
 	border-right-style: solid;
@@ -530,12 +538,13 @@ mcTableBodyStyle
 
 .TableStyle-Color-with-Subsections-BodyA-Column1-FirstLevel
 {
-	vertical-align: top;
+	text-align: left;
+	vertical-align: middle;
 	background-color: #d0d3d5;
 	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 .TableStyle-Color-with-Subsections-BodyA-Column1-FirstLevel p
@@ -545,12 +554,13 @@ mcTableBodyStyle
 
 .TableStyle-Color-with-Subsections-BodyG-Column1-FirstLevel
 {
-	vertical-align: top;
+	text-align: left;
+	vertical-align: middle;
 	background-color: #d0d3d5;
 	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 .TableStyle-Color-with-Subsections-BodyG-Column1-FirstLevel p
@@ -568,9 +578,9 @@ mcTableBodyStyle
 	vertical-align: top;
 	background-color: #f3f4f4;
 	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 .TableStyle-Color-with-Subsections-BodyI-Column1-SecondLevel p
@@ -583,9 +593,9 @@ mcTableBodyStyle
 	vertical-align: top;
 	background-color: #f3f4f4;
 	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 	border-bottom-width: 2px;
 	border-bottom-color: #ffffff;
 	border-bottom-style: solid;
@@ -604,9 +614,9 @@ mcTableBodyStyle
 	vertical-align: top;
 	background-color: #f3f4f4;
 	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 	border-bottom-width: 2px;
 	border-bottom-color: #ffffff;
 	border-bottom-style: solid;
@@ -622,9 +632,9 @@ mcTableBodyStyle
 	vertical-align: top;
 	background-color: #f3f4f4;
 	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 	border-right-width: 2px;
 	border-right-color: #ffffff;
 	border-right-style: solid;
@@ -640,9 +650,9 @@ mcTableBodyStyle
 	vertical-align: top;
 	background-color: #f3f4f4;
 	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 	border-bottom-width: 2px;
 	border-bottom-color: #ffffff;
 	border-bottom-style: solid;
@@ -658,9 +668,9 @@ mcTableBodyStyle
 	vertical-align: top;
 	background-color: #f3f4f4;
 	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 .TableStyle-Color-with-Subsections-BodyC-Column1-SecondLevel p
@@ -673,9 +683,9 @@ mcTableBodyStyle
 	vertical-align: top;
 	background-color: #f3f4f4;
 	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 	border-right-width: 2px;
 	border-right-color: #ffffff;
 	border-right-style: solid;
@@ -691,9 +701,9 @@ mcTableBodyStyle
 	vertical-align: top;
 	background-color: #f3f4f4;
 	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 .TableStyle-Color-with-Subsections-BodyA-Column1-SecondLevel p
@@ -706,9 +716,9 @@ mcTableBodyStyle
 	vertical-align: top;
 	background-color: #f3f4f4;
 	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 .TableStyle-Color-with-Subsections-BodyG-Column1-SecondLevel p
