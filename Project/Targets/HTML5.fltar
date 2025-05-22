@@ -8,7 +8,8 @@
   MasterPage="/Content/Resources/MasterPages/Other-Topics.flmsp"
   DefaultUrl="/Content/Home.htm"
   ConditionTagExpression="include[Default.ScreenOnly] exclude[Default.PrintOnly] "
-  OutputFile="index.html">
+  OutputFile="index.html"
+  FaviconSkin="/Project/Skins/Digilang.flskn">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"
