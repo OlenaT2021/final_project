@@ -135,20 +135,19 @@
                                                 <p><b>Modular content.</b> DITA emphasizes reusable content through topics (for example, concept, task, reference). Text should be written in a standalone, context-independent way to maximize reusability across documents or outputs.</p>
                                             </li>
                                             <li>
-                                                <p><b>Conref mechanism.</b> Use the <code>@conref</code> attribute to reference externalized text from another DITA file. This allows for maintaining a single source of truth for repeated content (for example, warnings, definitions). </p>
+                                                <p><b>Conref mechanism.</b> Use the <code>@conref</code> attribute to reference externalized text from another DITA file. This allows for maintaining a single source of truth for repeated content (for example, warnings, definitions). To avoid text fragmentation, which makes translation difficult or impossible, <code>@conref</code> should not be used for fragments of sentences or single words; it should be applied to entire paragraphs or sentences.</p>
                                             </li>
                                         </ul>
                                         <div class="example-grey">
-                                            <p data-mc-autonum="&lt;b&gt;Example&lt;/b&gt; &#160;&#160;"><span class="autonumber"><span class="Setoff"><b>Example</b> &#160;&#160;</span></span> <code>&lt;p conref="common.dita#topicID/paraID"/&gt;</code> pulls text from another file</p>
+                                            <p data-mc-autonum="&lt;b&gt;Example&lt;/b&gt; &#160;"><span class="autonumber"><span class="Setoff"><b>Example</b> &#160;</span></span> <code>&lt;p conref="common.dita#topicID/paraID"/&gt;</code> pulls text from another file</p>
                                         </div>
-                                        <p><b>WARNING </b>To avoid text fragmentation, which makes translation difficult or impossible, <code>@conref</code> should not be used for fragments of sentences or single words; it should be applied to entire paragraphs or sentences.</p>
                                         <ul>
                                             <li>
                                                 <p><b>Key references (keyref).</b> For variable text (for example, product names), use <code>@keyref</code> with a key defined in a DITA map. This supports easy updates and localization. </p>
                                             </li>
                                         </ul>
                                         <div class="example-grey">
-                                            <p data-mc-autonum="&lt;b&gt;Example&lt;/b&gt; &#160;&#160;"><span class="autonumber"><span class="Setoff"><b>Example</b> &#160;&#160;</span></span><code>&lt;keyword keyref="product-name"/&gt;</code> where the key is mapped to "Product X" in a map file</p>
+                                            <p data-mc-autonum="&lt;b&gt;Example&lt;/b&gt; &#160;"><span class="autonumber"><span class="Setoff"><b>Example</b> &#160;</span></span><code>&lt;keyword keyref="product-name"/&gt;</code> where the key is mapped to "Product X" in a map file</p>
                                         </div>
                                         <ul>
                                             <li>
@@ -163,7 +162,7 @@
                                             </li>
                                         </ul>
                                         <div class="example-grey">
-                                            <p data-mc-autonum="&lt;b&gt;Example&lt;/b&gt; &#160;&#160;"><span class="autonumber"><span class="Setoff"><b>Example</b> &#160;&#160;</span></span>&#160;</p>
+                                            <p data-mc-autonum="&lt;b&gt;Example&lt;/b&gt; &#160;"><span class="autonumber"><span class="Setoff"><b>Example</b> &#160;</span></span>&#160;</p>
                                             <ul style="list-style-type: circle;">
                                                 <li>
                                                     <p><code>&lt;p&gt;</code> for paragraphs, not for layout spacing</p>
@@ -179,7 +178,7 @@
                                             </li>
                                         </ul>
                                         <div class="example-grey">
-                                            <p data-mc-autonum="&lt;b&gt;Example&lt;/b&gt; &#160;&#160;"><span class="autonumber"><span class="Setoff"><b>Example</b> &#160;&#160;</span></span> Use <code>&lt;section&gt;</code> or <code>&lt;div&gt;</code> for structure, styled later via XSLT/CSS.</p>
+                                            <p data-mc-autonum="&lt;b&gt;Example&lt;/b&gt; &#160;"><span class="autonumber"><span class="Setoff"><b>Example</b> &#160;</span></span> Use <code>&lt;section&gt;</code> or <code>&lt;div&gt;</code> for structure, styled later via XSLT/CSS.</p>
                                         </div>
                                         <ul>
                                             <li>
@@ -200,7 +199,7 @@
                                             </li>
                                         </ul>
                                         <div class="example-grey">
-                                            <p data-mc-autonum="&lt;b&gt;Example&lt;/b&gt; &#160;&#160;"><span class="autonumber"><span class="Setoff"><b>Example</b> &#160;&#160;</span></span><code>&lt;codeblock&gt;print("Hello, DITA!")&lt;/codeblock&gt;</code>
+                                            <p data-mc-autonum="&lt;b&gt;Example&lt;/b&gt; &#160;"><span class="autonumber"><span class="Setoff"><b>Example</b> &#160;</span></span><code>&lt;codeblock&gt;print("Hello, DITA!")&lt;/codeblock&gt;</code>
                                             </p>
                                         </div>
                                         <ul>
@@ -209,7 +208,7 @@
                                             </li>
                                         </ul>
                                         <div class="example-grey">
-                                            <p data-mc-autonum="&lt;b&gt;Example&lt;/b&gt; &#160;&#160;"><span class="autonumber"><span class="Setoff"><b>Example</b> &#160;&#160;</span></span> Use <code>&lt;codeph&gt;git commit&lt;/codeph&gt;</code> to execute the commit.</p>
+                                            <p data-mc-autonum="&lt;b&gt;Example&lt;/b&gt; &#160;"><span class="autonumber"><span class="Setoff"><b>Example</b> &#160;</span></span> Use <code>&lt;codeph&gt;git commit&lt;/codeph&gt;</code> to execute the commit.</p>
                                         </div>
                                         <ul>
                                             <li>
