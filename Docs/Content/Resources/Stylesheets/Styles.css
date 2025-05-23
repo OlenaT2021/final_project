@@ -694,6 +694,17 @@ div
 		width: 49%;
 		margin-left: 25.5%;
 	}
+
+	div.example-grey
+	{
+		padding: 1px 5px 1px 15px;
+		margin: 1px 1px 1px 1px;
+	}
+
+	div.example-ghost
+	{
+		margin: 1px 10px 1px 1px;
+	}
 }
 
 @media print
@@ -770,7 +781,7 @@ div.example-grey
 	border-left-style: solid;
 	border-left-width: 5px;
 	padding: 1px 5px 1px 15px;
-	margin: 1px 300px 1px 30px;
+	margin: 1px 150px 1px 30px;
 }
 
 div.example-grey > p
@@ -793,6 +804,6 @@ div.example-ghost
 	border-left-width: 10px;
 	box-sizing: content-box;
 	padding: 1px 20px 1px 20px;
-	margin: 1px 100px 1px 1px;
+	margin: 1px 1px 1px 1px;
 }
 
